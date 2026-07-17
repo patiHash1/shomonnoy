@@ -109,8 +109,14 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   box-shadow: 0 4px 0 var(--orange-press);
   transition: transform .15s ease, box-shadow .15s ease;
 }
-.nav-cta:hover{transform:translateY(-2px); box-shadow: 0 6px 0 var(--orange-press);}
-.nav-cta:active{transform:translateY(2px); box-shadow: 0 1px 0 var(--orange-press);}
+.nav-cta::after {
+  content: none !important;
+}
+.nav-cta:hover{
+  transform: translateY(-2px) scale(1.03); 
+  box-shadow: 0 6px 0 var(--orange-press), 0 8px 16px rgba(244,163,64,0.25);
+}
+.nav-cta:active{transform:translateY(2px) scale(0.98); box-shadow: 0 1px 0 var(--orange-press);}
 .hamburger{
   display:none; width:42px; height:42px; border:none; background:transparent;
   align-items:center; justify-content:center;
