@@ -233,7 +233,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 @media (max-width:720px){ .stats{grid-template-columns:repeat(2,1fr);} }
 
 .credibility-strip{display:flex; justify-content:center; padding-top:32px;}
-.credibility-logo{height:46px; width:auto;}
+.credibility-logo{height:60px; width:auto;}
 
 /* =========================================================
    SECTION HEADERS (reused pattern)
@@ -459,6 +459,24 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   font-size:0.9rem; color:var(--ink-soft); font-style:italic; line-height:1.6;
   margin-top:-14px; margin-bottom:24px; padding-right:20px;
 }
+.message-image-wrap {
+  margin-top: 14px;
+  margin-bottom: 24px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-soft);
+  max-width: 100%;
+}
+.message-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s var(--ease);
+}
+.message-card:hover .message-image {
+  transform: scale(1.02);
+}
 .message-person{display:flex; align-items:center; gap:14px;}
 .avatar{
   width:54px; height:54px; border-radius:50%; display:flex; align-items:center; justify-content:center;
@@ -545,3 +563,433 @@ footer{background:var(--navy); color:var(--white-75); padding:48px 0 26px;}
   .about-grid{grid-template-columns:1fr;}
   .about-visual{min-height:280px; order:-1;}
 }
+
+/* =========================================================
+   DEPLOYMENT & LOCALIZATION UPGRADES
+   ========================================================= */
+
+/* Dynamic Font Switching for Bengali */
+html[lang="bn"] body,
+html[lang="bn"] input,
+html[lang="bn"] select,
+html[lang="bn"] textarea,
+html[lang="bn"] button,
+html[lang="bn"] h1,
+html[lang="bn"] h2,
+html[lang="bn"] h3,
+html[lang="bn"] h4 {
+  font-family: 'Noto Sans Bengali', system-ui, sans-serif !important;
+}
+
+/* Language Switch Toggle in Navbar */
+.lang-switch-wrap {
+  display: inline-flex;
+  align-items: center;
+}
+.lang-toggle-btn {
+  background: var(--white);
+  border: 1px solid var(--line);
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-family: var(--body);
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--ink-soft);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: var(--shadow-soft);
+  transition: all 0.25s var(--ease);
+}
+.lang-toggle-btn:hover {
+  background: var(--blue-tint);
+  border-color: var(--blue);
+  color: var(--blue-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(59,130,196,0.15);
+}
+.lang-toggle-btn:active {
+  transform: translateY(1px);
+}
+.lang-toggle-btn .lang-option {
+  opacity: 0.5;
+  transition: opacity 0.2s ease, color 0.2s ease;
+}
+.lang-toggle-btn .lang-option.active {
+  opacity: 1;
+  color: var(--blue-dark);
+}
+.lang-toggle-btn .lang-divider {
+  color: var(--line);
+  font-weight: 400;
+}
+
+/* Mobile responsive padding for lang switch */
+@media (max-width:880px) {
+  .lang-switch-wrap {
+    margin-top: 10px;
+    width: 100%;
+  }
+  .lang-toggle-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 10px;
+  }
+}
+
+/* =========================================================
+   BRILLIANT.ORG-STYLE SVG INTERACTIVE ANIMATIONS
+   ========================================================= */
+
+/* --- ABOUT VISUAL: PLAYGROUND --- */
+.about-visual svg {
+  transition: transform 0.4s var(--ease);
+}
+.about-visual:hover svg {
+  transform: scale(1.03);
+}
+.svg-playground-ball {
+  transform-origin: 180px 240px;
+}
+.about-visual:hover .svg-playground-ball {
+  animation: ball-bounce 1.2s ease-in-out infinite;
+}
+.svg-playground-plane {
+  transform-origin: 80px 80px;
+}
+.about-visual:hover .svg-playground-plane {
+  animation: plane-fly 2.5s cubic-bezier(0.25, 1, 0.5, 1) infinite;
+}
+.svg-playground-brush {
+  transform-origin: 290px 140px;
+  transition: transform 0.3s ease;
+}
+.about-visual:hover .svg-playground-brush {
+  animation: brush-paint 1.5s ease-in-out infinite;
+}
+.svg-playground-leaves {
+  transform-origin: 300px 200px;
+}
+.about-visual:hover .svg-playground-leaves {
+  animation: leaves-rustle 3s ease-in-out infinite;
+}
+.svg-playground-screen-happy {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.svg-playground-screen-sleep {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+.about-visual:hover .svg-playground-screen-happy {
+  opacity: 1;
+}
+.about-visual:hover .svg-playground-screen-sleep {
+  opacity: 0;
+}
+
+@keyframes ball-bounce {
+  0%, 100% { transform: translateY(0) scaleY(1); }
+  40% { transform: translateY(-35px) scaleY(1.02); }
+  50% { transform: translateY(-35px) scaleY(1.02); }
+  90% { transform: translateY(0) scaleY(0.96); }
+}
+@keyframes plane-fly {
+  0% { transform: translate(-30px, 20px) rotate(-10deg) scale(0.9); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { transform: translate(120px, -60px) rotate(15deg) scale(1.1); opacity: 0; }
+}
+@keyframes brush-paint {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(15deg) translate(-10px, -5px); }
+}
+@keyframes leaves-rustle {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-2deg); }
+  75% { transform: rotate(2deg); }
+}
+
+/* --- VISION & MISSION CARDS --- */
+.vm-card {
+  transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
+}
+.vm-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lift);
+}
+.vm-svg-bg {
+  position: absolute;
+  right: -10px;
+  bottom: -15px;
+  width: 140px;
+  height: 140px;
+  opacity: 0.18;
+  transition: all 0.4s var(--ease);
+  pointer-events: none;
+  overflow: visible;
+}
+.vm-card:hover .vm-svg-bg {
+  opacity: 0.35;
+  transform: scale(1.08) rotate(3deg);
+}
+.vm-svg-telescope {
+  transform-origin: 30px 90px;
+  transition: transform 0.4s var(--ease);
+}
+.vm-card.vision:hover .vm-svg-telescope {
+  transform: rotate(-12deg);
+}
+.vm-svg-star {
+  transform-origin: center;
+  animation: star-glow 3s ease-in-out infinite;
+}
+.vm-svg-star-1 { animation-delay: 0s; }
+.vm-svg-star-2 { animation-delay: 0.8s; }
+.vm-svg-star-3 { animation-delay: 1.6s; }
+
+.vm-svg-needle {
+  transform-origin: 60px 60px;
+  transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.vm-card.mission:hover .vm-svg-needle {
+  transform: rotate(180deg);
+}
+
+@keyframes star-glow {
+  0%, 100% { opacity: 0.3; transform: scale(0.85); }
+  50% { opacity: 1; transform: scale(1.15); }
+}
+
+/* --- VALUE CARDS --- */
+.value-card {
+  overflow: hidden;
+}
+.value-icon svg {
+  width: 24px;
+  height: 24px;
+  display: block;
+  transition: transform 0.3s var(--ease);
+}
+.value-card:hover .value-icon svg {
+  transform: scale(1.15);
+}
+.value-card:nth-child(1):hover .svg-val-lightbulb {
+  animation: bulb-glow 0.8s ease-in-out infinite alternate;
+}
+.value-card:nth-child(2):hover .svg-val-scale-beam {
+  animation: scale-tilt 1.8s ease-in-out infinite;
+}
+.value-card:nth-child(3):hover .svg-val-hands {
+  animation: hands-bounce 1s ease-in-out infinite;
+}
+.value-card:nth-child(4):hover .svg-val-wand {
+  animation: wand-wave 1.2s ease-in-out infinite;
+}
+.value-card:nth-child(4):hover .svg-val-star {
+  animation: sparkle-shoot 1.2s ease-in-out infinite;
+}
+
+@keyframes bulb-glow {
+  0% { filter: drop-shadow(0 0 1px rgba(244,163,64,0.2)); fill: none; }
+  100% { filter: drop-shadow(0 0 8px rgba(244,163,64,0.85)); fill: rgba(244,163,64,0.15); }
+}
+@keyframes scale-tilt {
+  0%, 100% { transform: rotate(0deg); }
+  33% { transform: rotate(-8deg); }
+  66% { transform: rotate(8deg); }
+}
+@keyframes hands-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px) scale(1.05); }
+}
+@keyframes wand-wave {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(-15deg) translate(-1px, -1px); }
+}
+@keyframes sparkle-shoot {
+  0% { transform: scale(0) translate(0,0); opacity: 0; }
+  50% { transform: scale(1) translate(4px,-4px); opacity: 1; }
+  100% { transform: scale(0) translate(8px,-8px); opacity: 0; }
+}
+
+/* --- E-BOOK RESOURCE CARDS --- */
+.resource-svg-guide, .resource-svg-parent, .resource-svg-activity {
+  width: 70%;
+  height: auto;
+  overflow: visible;
+  transition: transform 0.3s var(--ease);
+  display: block;
+}
+.resource-card:hover .resource-svg-guide,
+.resource-card:hover .resource-svg-parent,
+.resource-card:hover .resource-svg-activity {
+  transform: scale(1.05);
+}
+.svg-guide-cover {
+  transform-origin: 30px 60px;
+  transition: transform 0.4s var(--ease);
+}
+.resource-card:hover .svg-guide-cover {
+  transform: rotateY(-35deg) skewY(5deg);
+}
+.svg-guide-sparkle {
+  transform-origin: center;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.resource-card:hover .svg-guide-sparkle {
+  opacity: 1;
+  animation: sparkle-twinkle 1.5s infinite;
+}
+
+.svg-parent-hand {
+  transform-origin: 60px 68px;
+}
+.resource-card:hover .svg-parent-hand {
+  animation: clock-tick 6s linear infinite;
+}
+.svg-parent-bubble1 {
+  transform-origin: 30px 45px;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform: scale(0.9);
+}
+.resource-card:hover .svg-parent-bubble1 {
+  transform: scale(1.08) translateY(-3px);
+}
+.svg-parent-bubble2 {
+  transform-origin: 90px 45px;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform: scale(0.9);
+  transition-delay: 0.08s;
+}
+.resource-card:hover .svg-parent-bubble2 {
+  transform: scale(1.08) translateY(-3px);
+}
+
+.svg-activity-piece1 {
+  transform-origin: 35px 85px;
+  transition: transform 0.4s var(--ease);
+}
+.resource-card:hover .svg-activity-piece1 {
+  transform: translate(4px, -3px) rotate(4deg);
+}
+.svg-activity-piece2 {
+  transform-origin: 85px 85px;
+  transition: transform 0.4s var(--ease);
+}
+.resource-card:hover .svg-activity-piece2 {
+  transform: translate(-4px, -3px) rotate(-4deg);
+}
+.svg-activity-check1, .svg-activity-check2 {
+  stroke-dasharray: 20;
+  stroke-dashoffset: 20;
+  transition: stroke-dashoffset 0.3s ease;
+}
+.resource-card:hover .svg-activity-check1 {
+  stroke-dashoffset: 0;
+}
+.resource-card:hover .svg-activity-check2 {
+  stroke-dashoffset: 0;
+  transition-delay: 0.15s;
+}
+
+@keyframes clock-tick {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* --- NETWORK GALLERY CARDS --- */
+.gallery-svg-laptop, .gallery-svg-camera, .gallery-svg-contract,
+.gallery-svg-palette, .gallery-svg-pledge, .gallery-svg-story {
+  width: 55%;
+  height: auto;
+  overflow: visible;
+  transition: transform 0.3s var(--ease);
+  display: block;
+}
+.gallery-card:hover .gallery-svg-laptop,
+.gallery-card:hover .gallery-svg-camera,
+.gallery-card:hover .gallery-svg-contract,
+.gallery-card:hover .gallery-svg-palette,
+.gallery-card:hover .gallery-svg-pledge,
+.gallery-card:hover .gallery-svg-story {
+  transform: scale(1.06);
+}
+.gallery-card:hover .svg-laptop-beam {
+  animation: scale-tilt 2.5s ease-in-out infinite;
+}
+.svg-camera-flash {
+  opacity: 0;
+  transform-origin: 82px 35px;
+}
+.gallery-card:hover .svg-camera-flash {
+  animation: flash-burst 1.5s ease-in-out infinite;
+}
+.svg-camera-lens {
+  transform-origin: 60px 70px;
+  transition: transform 0.3s var(--ease);
+}
+.gallery-card:hover .svg-camera-lens {
+  transform: scale(1.08);
+}
+.svg-contract-pen {
+  transform-origin: 90px 30px;
+}
+.gallery-card:hover .svg-contract-pen {
+  animation: pen-write 1.8s ease-in-out infinite;
+}
+.svg-palette-brush {
+  transform-origin: 85px 35px;
+}
+.gallery-card:hover .svg-palette-brush {
+  animation: brush-wiggle 1.2s ease-in-out infinite;
+}
+.svg-pledge-heart {
+  transform-origin: 60px 60px;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.gallery-card:hover .svg-pledge-heart {
+  transform: scale(1.12);
+  animation: heart-beat 1s infinite alternate;
+}
+.svg-pledge-star1 { transform-origin: 25px 25px; }
+.svg-pledge-star2 { transform-origin: 95px 95px; }
+.gallery-card:hover .svg-pledge-star1,
+.gallery-card:hover .svg-pledge-star2 {
+  animation: star-glow 2s ease-in-out infinite;
+}
+.svg-story-flame1 { transform-origin: 52px 65px; }
+.svg-story-flame2 { transform-origin: 68px 70px; }
+.gallery-card:hover .svg-story-flame1 {
+  animation: flame-dance 0.8s ease-in-out infinite alternate;
+}
+.gallery-card:hover .svg-story-flame2 {
+  animation: flame-dance 0.8s ease-in-out infinite alternate;
+  animation-delay: 0.2s;
+}
+.svg-story-spark {
+  opacity: 0;
+}
+.gallery-card:hover .svg-story-spark {
+  animation: spark-rise 2s ease-in-out infinite;
+}
+.svg-story-spark2 {
+  animation-delay: 0.7s;
+}
+
+@keyframes flash-burst {
+  0%, 100% { opacity: 0; transform: scale(0.6); }
+  10%, 20% { opacity: 1; transform: scale(1.3); }
+  40% { opacity: 0; transform: scale(1); }
+}
+@keyframes pen-write {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  33% { transform: translate(-6px, 4px) rotate(-8deg); }
+  66% { transform: translate(-3px, -1px) rotate(4deg); }
+}
+@keyframes brush-wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(18deg) translate(-4px, 1px); }
+}
+

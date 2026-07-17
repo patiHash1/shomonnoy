@@ -37,6 +37,13 @@
       <li><a href="#ebooks" class="nav-link-item" data-i18n="nav.links.ebooks">Resources</a></li>
       <li><a href="#messages" class="nav-link-item" data-i18n="nav.links.messages">Messages</a></li>
       <li><a href="#contact" class="nav-cta" data-i18n="nav.cta">Get Involved</a></li>
+      <li class="lang-switch-wrap">
+        <button onclick="switchLanguage(document.documentElement.getAttribute('lang') === 'en' ? 'bn' : 'en')" class="lang-toggle-btn" aria-label="Toggle language">
+          <span class="lang-option active" id="langEN">EN</span>
+          <span class="lang-divider">/</span>
+          <span class="lang-option" id="langBN">বাংলা</span>
+        </button>
+      </li>
     </ul>
     <button class="hamburger" id="hamburger" aria-label="Toggle menu" data-i18n-aria-label="nav.hamburgerLabel" aria-expanded="false"><span></span></button>
   </div>
@@ -115,10 +122,71 @@
     </div>
     <div class="about-grid">
       <div class="about-visual reveal">
-        <svg viewBox="0 0 200 200" fill="none">
-          <circle cx="100" cy="100" r="70" fill="rgba(255,255,255,0.18)"/>
-          <circle cx="100" cy="100" r="45" fill="rgba(255,255,255,0.28)"/>
-          <path d="M70 100 L92 122 L134 78" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Background decorative shapes -->
+          <circle cx="200" cy="150" r="130" fill="rgba(255,255,255,0.12)" />
+          <circle cx="200" cy="150" r="90" fill="rgba(255,255,255,0.15)" />
+          
+          <!-- Tablet / Screen (left side) -->
+          <rect x="50" y="90" width="110" height="150" rx="16" fill="#142338" stroke="rgba(255,255,255,0.25)" stroke-width="3" />
+          <rect x="60" y="105" width="90" height="110" rx="6" fill="#FFFFFF" />
+          <circle cx="105" cy="228" r="5" fill="#FFFFFF" opacity="0.8" />
+          
+          <!-- Screen sleep face -->
+          <g class="svg-playground-screen-sleep">
+            <path d="M92 155 Q97 160 102 155" stroke="#55677C" stroke-width="3.5" stroke-linecap="round" fill="none" />
+            <path d="M108 155 Q113 160 118 155" stroke="#55677C" stroke-width="3.5" stroke-linecap="round" fill="none" />
+            <text x="124" y="142" fill="#55677C" font-family="monospace" font-size="12" font-weight="bold">Zzz</text>
+          </g>
+          
+          <!-- Screen happy face (active on hover) -->
+          <g class="svg-playground-screen-happy">
+            <circle cx="95" cy="150" r="5.5" fill="#3B82C4" />
+            <circle cx="115" cy="150" r="5.5" fill="#3B82C4" />
+            <path d="M97 164 Q105 174 113 164" stroke="#3B82C4" stroke-width="3.5" stroke-linecap="round" fill="none" />
+            <path d="M84 140 C88 136, 122 136, 126 140" stroke="#F4A340" stroke-width="3.5" stroke-linecap="round" fill="none" />
+          </g>
+          
+          <!-- Playground tree (right side) -->
+          <path d="M292 240 L308 240 L304 180 L296 180 Z" fill="#9A5B0E" />
+          <g class="svg-playground-leaves">
+            <circle cx="280" cy="155" r="34" fill="#45B996" />
+            <circle cx="320" cy="155" r="34" fill="#45B996" />
+            <circle cx="300" cy="125" r="38" fill="#E1F5EE" opacity="0.85" />
+            <circle cx="300" cy="135" r="34" fill="#45B996" />
+            <circle cx="276" cy="152" r="5" fill="#F4A340" />
+            <circle cx="316" cy="162" r="5" fill="#F4A340" />
+            <circle cx="296" cy="132" r="5" fill="#3B82C4" />
+          </g>
+
+          <!-- Flying Paper Plane -->
+          <g class="svg-playground-plane">
+            <path d="M10 0 L40 18 L15 24 Z" fill="#FFFFFF" stroke="#245A85" stroke-width="2" stroke-linejoin="round" />
+            <path d="M15 24 L24 20 L40 18 Z" fill="#E7F1FA" stroke="#245A85" stroke-width="1.5" stroke-linejoin="round" />
+          </g>
+          
+          <!-- Bouncing Soccer Ball -->
+          <g class="svg-playground-ball">
+            <circle cx="180" cy="240" r="16" fill="#FFFFFF" stroke="#142338" stroke-width="2.5" />
+            <path d="M172 230 L180 236 L188 230" stroke="#142338" stroke-width="2" fill="none" />
+            <path d="M166 242 L176 242 L180 252 L170 254 Z" fill="#142338" />
+            <path d="M194 242 L184 242 L180 252 L190 254 Z" fill="#142338" />
+            <path d="M180 224 L180 236" stroke="#142338" stroke-width="2" />
+          </g>
+          
+          <!-- Paintbrush -->
+          <g class="svg-playground-brush">
+            <line x1="280" y1="130" x2="230" y2="180" stroke="#C97A1E" stroke-width="4.5" stroke-linecap="round" />
+            <rect x="274" y="126" width="6" height="8" fill="#B9C6D6" transform="rotate(-45 277 130)" />
+            <path d="M278 122 Q286 112 284 108 Q280 110 274 118 Z" fill="#3B82C4" />
+            <path d="M230 190 Q200 205 160 190" stroke="#3B82C4" stroke-width="5.5" stroke-linecap="round" fill="none" opacity="0.6" />
+          </g>
+          
+          <!-- Sparkles -->
+          <g class="svg-playground-stars">
+            <path d="M200 70 L202 76 L208 77 L203 81 L205 87 L200 84 L195 87 L197 81 L192 77 L198 76 Z" fill="#F4A340" />
+            <path d="M240 50 L241.5 54.5 L246 55 L242.5 58 L244 62.5 L240 60.5 L236 62.5 L237.5 58 L234 55 L238.5 54.5 Z" fill="#3B82C4" />
+          </g>
         </svg>
       </div>
       <div>
@@ -152,13 +220,41 @@
     </div>
     <div class="vm-grid">
       <div class="vm-card vision reveal">
-        <i class="bg-icon" data-lucide="telescope"></i>
+        <svg class="vm-svg-bg vm-svg-telescope-bg" viewBox="0 0 120 120" fill="none">
+          <path d="M102 36 C102 24 94 14 84 12 C92 18 92 28 88 34 C84 40 74 42 68 38 C74 48 88 50 96 46 C100 42 102 40 102 36 Z" fill="#F4A340" />
+          <path class="vm-svg-star vm-svg-star-1" d="M38 18 L40 22 L45 23 L41 26 L42 30 L38 28 L34 30 L35 26 L31 23 L36 22 Z" fill="#FFFFFF" />
+          <path class="vm-svg-star vm-svg-star-2" d="M78 54 L79.5 57.5 L83 58 L80.5 60.5 L81 64 L78 62 L75 64 L75.5 60.5 L73 58 L76.5 57.5 Z" fill="#FFFFFF" />
+          <path class="vm-svg-star vm-svg-star-3" d="M18 68 L19 71 L22 71.5 L20 73.5 L20.5 76 L18 74.5 L15.5 76 L16 73.5 L14 71.5 L17 71 Z" fill="#FFFFFF" />
+          <g class="vm-svg-telescope">
+            <line x1="28" y1="94" x2="16" y2="114" stroke="#B9C6D6" stroke-width="2.5" stroke-linecap="round" />
+            <line x1="28" y1="94" x2="38" y2="114" stroke="#B9C6D6" stroke-width="2.5" stroke-linecap="round" />
+            <line x1="28" y1="94" x2="28" y2="110" stroke="#B9C6D6" stroke-width="1.5" stroke-linecap="round" />
+            <rect x="18" y="76" width="38" height="12" rx="3" fill="#3B82C4" stroke="#FFFFFF" stroke-width="2" transform="rotate(-35 30 84)" />
+            <rect x="50" y="73" width="22" height="8" rx="2" fill="#FFFFFF" stroke="#3B82C4" stroke-width="1.5" transform="rotate(-35 30 84)" />
+            <circle cx="68" cy="62" r="3" fill="#F4A340" />
+          </g>
+        </svg>
         <div class="eyebrow" data-i18n="vision.visionCard.label">Vision</div>
         <h3 data-i18n="vision.visionCard.title">A generation that chooses balance, not restriction.</h3>
         <p data-i18n="vision.visionCard.text">We imagine students who use technology with intention — confident enough to put the phone down and pick up a paintbrush, a football, or a friend.</p>
       </div>
       <div class="vm-card mission reveal">
-        <i class="bg-icon" data-lucide="compass"></i>
+        <svg class="vm-svg-bg vm-svg-compass-bg" viewBox="0 0 120 120" fill="none">
+          <circle cx="60" cy="60" r="46" stroke="#FFFFFF" stroke-width="3.5" fill="rgba(255,255,255,0.06)" />
+          <circle cx="60" cy="60" r="40" stroke="#B9C6D6" stroke-width="1.5" stroke-dasharray="4,4" />
+          <polygon points="60,18 63,26 57,26" fill="#F4A340" />
+          <polygon points="60,102 63,94 57,94" fill="#FFFFFF" opacity="0.6" />
+          <polygon points="102,60 94,63 94,57" fill="#FFFFFF" opacity="0.6" />
+          <polygon points="18,60 26,63 26,57" fill="#FFFFFF" opacity="0.6" />
+          <g class="vm-svg-needle">
+            <polygon points="60,60 55,60 60,30" fill="#F4A340" stroke="#C97A1E" stroke-width="0.5" />
+            <polygon points="60,60 65,60 60,30" fill="#FDEEDA" stroke="#C97A1E" stroke-width="0.5" />
+            <polygon points="60,60 55,60 60,90" fill="#3B82C4" stroke="#245A85" stroke-width="0.5" />
+            <polygon points="60,60 65,60 60,90" fill="#E7F1FA" stroke="#245A85" stroke-width="0.5" />
+            <circle cx="60" cy="60" r="6" fill="#FFFFFF" stroke="#142338" stroke-width="2" />
+            <circle cx="60" cy="60" r="2.5" fill="#142338" />
+          </g>
+        </svg>
         <div class="eyebrow" data-i18n="vision.missionCard.label">Mission</div>
         <h3 data-i18n="vision.missionCard.title">Equip students with habits, not just warnings.</h3>
         <p data-i18n="vision.missionCard.text">Through workshops, challenges, and peer clubs, we give students practical tools to notice their screen habits and replace them with things they genuinely enjoy.</p>
@@ -167,22 +263,57 @@
 
     <div class="values-grid">
       <div class="value-card reveal">
-        <div class="value-icon" style="background:var(--blue-tint)"><i data-lucide="message-circle-question" style="color:var(--blue-dark)"></i></div>
+        <div class="value-icon" style="background:var(--blue-tint)">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="svg-val-lightbulb" d="M9 18h6v1.5a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 19.5V18z" fill="none" stroke="var(--blue-dark)" stroke-width="2" />
+            <path class="svg-val-lightbulb" d="M12 3a6 6 0 0 0-6 6c0 2.22 1.21 4.15 3 5.19V18h6v-3.81c1.79-1.04 3-2.97 3-5.19a6 6 0 0 0-6-6z" fill="none" stroke="var(--blue-dark)" stroke-width="2" stroke-linejoin="round" />
+            <path d="M10.5 8.5 A 1.5 1.5 0 0 1 12.5 7.5 A 1.5 1.5 0 0 1 13.5 9 A 1.5 1.5 0 0 1 12 10.5 L 12 12.5" stroke="var(--blue-dark)" stroke-width="1.5" stroke-linecap="round" />
+            <circle cx="12" cy="14.5" r="1" fill="var(--blue-dark)" />
+          </svg>
+        </div>
         <h4 data-i18n="vision.values.curiosity.title">Curiosity</h4>
         <p data-i18n="vision.values.curiosity.text">Redirecting screen time energy into asking bigger questions.</p>
       </div>
       <div class="value-card reveal">
-        <div class="value-icon" style="background:var(--mint-tint)"><i data-lucide="sliders-horizontal" style="color:var(--teal-ink)"></i></div>
+        <div class="value-icon" style="background:var(--mint-tint)">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="12" y1="6" x2="12" y2="20" stroke="var(--teal-ink)" stroke-width="2.5" stroke-linecap="round" />
+            <line x1="7" y1="20" x2="17" y2="20" stroke="var(--teal-ink)" stroke-width="2" stroke-linecap="round" />
+            <g class="svg-val-scale-beam">
+              <line x1="4" y1="6" x2="20" y2="6" stroke="var(--teal-ink)" stroke-width="2" stroke-linecap="round" />
+              <line x1="6" y1="6" x2="6" y2="12" stroke="var(--teal-ink)" stroke-width="1" />
+              <path d="M3 12 Q12 14 9 12 L3 12 Z" fill="none" stroke="var(--teal-ink)" stroke-width="1.5" />
+              <line x1="18" y1="6" x2="18" y2="12" stroke="var(--teal-ink)" stroke-width="1" />
+              <path d="M15 12 Q24 14 21 12 L15 12 Z" fill="none" stroke="var(--teal-ink)" stroke-width="1.5" />
+            </g>
+            <circle cx="12" cy="6" r="2.5" fill="var(--teal-ink)" />
+          </svg>
+        </div>
         <h4 data-i18n="vision.values.balance.title">Balance</h4>
         <p data-i18n="vision.values.balance.text">Not zero screens — the right amount, at the right time.</p>
       </div>
       <div class="value-card reveal">
-        <div class="value-icon" style="background:var(--orange-tint)"><i data-lucide="hand-heart" style="color:var(--amber-ink)"></i></div>
+        <div class="value-icon" style="background:var(--orange-tint)">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="svg-val-hands" d="M12 21 C12 21 5 15 5 10 C5 6.5 7.5 4.5 9.5 4.5 C11 4.5 12 5.5 12 5.5 C12 5.5 13 4.5 14.5 4.5 C16.5 4.5 19 6.5 19 10 C19 15 12 21 12 21 Z" fill="none" stroke="var(--amber-ink)" stroke-width="2" />
+            <path d="M4 14 L8 11 L10 14" stroke="var(--amber-ink)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M20 14 L16 11 L14 14" stroke="var(--amber-ink)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <circle cx="12" cy="10" r="3" fill="var(--amber-ink)" />
+          </svg>
+        </div>
         <h4 data-i18n="vision.values.community.title">Community</h4>
         <p data-i18n="vision.values.community.text">Habits stick best when built alongside friends, not alone.</p>
       </div>
       <div class="value-card reveal">
-        <div class="value-icon" style="background:var(--blue-tint)"><i data-lucide="wand-sparkles" style="color:var(--blue-dark)"></i></div>
+        <div class="value-icon" style="background:var(--blue-tint)">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line class="svg-val-wand" x1="4" y1="20" x2="16" y2="8" stroke="var(--blue-dark)" stroke-width="2.5" stroke-linecap="round" />
+            <circle cx="16" cy="8" r="1.5" fill="var(--orange)" />
+            <path class="svg-val-star" d="M18 4 L19 6 L21 7 L19 8 L18 10 L17 8 L15 7 L17 6 Z" fill="var(--blue-dark)" />
+            <circle cx="21" cy="11" r="1" fill="var(--blue-dark)" />
+            <circle cx="13" cy="3" r="1.5" fill="var(--blue-dark)" />
+          </svg>
+        </div>
         <h4 data-i18n="vision.values.creativity.title">Creativity</h4>
         <p data-i18n="vision.values.creativity.text">Offline hobbies as the reward, not homework in disguise.</p>
       </div>
@@ -248,7 +379,7 @@
       <div class="eyebrow" data-i18n="messages.eyebrow">Messages</div>
       <h2 data-i18n="messages.heading">A word from our supporters</h2>
     </div>
-    <div class="messages-grid" id="messagesGrid"></div>
+    <div class="messages-grid reveal" id="messagesGrid"></div>
   </div>
 </section>
 
@@ -266,11 +397,14 @@
         <a href="#contactForm" class="btn btn-primary"><i data-lucide="arrow-down"></i> <span data-i18n="contact.partnerBox.cta">Start a Conversation</span></a>
       </div>
       <p style="color:var(--ink-soft); font-size:0.95rem;" data-i18n="contact.socialPrompt">Prefer social media? Find us here — links are placeholders, ready to connect.</p>
-      <div class="social-row">
+      <div class="social-row" style="align-items: center;">
         <a href="https://www.facebook.com/patihash.creative.2024" target="_blank" rel="noopener noreferrer" aria-label="Facebook" data-i18n-aria-label="contact.social.facebook"><i data-lucide="facebook"></i></a>
         <a href="https://www.instagram.com/patihash.creative/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" data-i18n-aria-label="contact.social.instagram"><i data-lucide="instagram"></i></a>
         <a href="https://www.linkedin.com/company/patihash" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" data-i18n-aria-label="contact.social.linkedin"><i data-lucide="linkedin"></i></a>
         <a href="#" aria-label="Email" data-i18n-aria-label="contact.social.email"><i data-lucide="mail"></i></a>
+        <a href="https://www.patihash.com/" target="_blank" rel="noopener noreferrer" class="footer-qr-card" aria-label="Visit patiHash.com" style="margin-left: 8px; padding: 4px; border-radius: 8px;">
+          <img src="assets/patihash-qr.png" alt="QR code linking to patiHash.com" style="width: 38px; height: 38px; display: block;">
+        </a>
       </div>
     </div>
 
@@ -324,12 +458,6 @@
         <li><a href="#ebooks" data-i18n="footer.links.ebooks">Resources</a></li>
         <li><a href="#contact" data-i18n="footer.links.contact">Contact</a></li>
       </ul>
-      <div class="footer-qr">
-        <a href="https://www.patihash.com/" target="_blank" rel="noopener noreferrer" class="footer-qr-card" aria-label="Visit patiHash.com">
-          <img src="assets/patihash-qr.png" alt="QR code linking to patiHash.com" class="footer-qr-code">
-        </a>
-        <span class="footer-qr-label" data-i18n="footer.qrLabel">Scan to visit patiHash.com</span>
-      </div>
     </div>
     <div class="footer-bottom">
       <div class="footer-credit-line">
@@ -342,6 +470,7 @@
 </footer>
 
 <script src="l10n/en.js"></script>
+<script src="l10n/bn.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

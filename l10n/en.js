@@ -6,7 +6,7 @@
    identical, assign the result to window.I18N, and swap
    which l10n/*.js file the page loads.
    ========================================================= */
-window.I18N = {
+window.I18N_EN = {
   meta: {
     title: "Project Shomonnoy — Balancing Screen Time & Real Life",
     description: "Project Shomonnoy is a student-led Teach For Bangladesh capstone helping Grade 6-7 students build a healthy balance between screen time and real life."
@@ -130,20 +130,6 @@ window.I18N = {
     eyebrow: "Messages",
     heading: "A word from our supporters",
     quotes: [
-      {
-        quote: "Project Shomonnoy has given our students language for something they were already feeling — that their time matters, and they get to choose how they spend it.",
-        initials: "PR",
-        avatarColor: "var(--blue)",
-        name: "[Principal's Name]",
-        role: "Principal, Partner School"
-      },
-      {
-        quote: "What stands out is that this wasn't designed for students — it was designed with them. That's why it's working.",
-        initials: "DR",
-        avatarColor: "var(--mint)",
-        name: "[Director's Name]",
-        role: "Director, RFZ Welfare Trust"
-      },
       {
         quote: "নতুন দিনের মিছিলে শামিল হওয়ার জন্য প্রয়োজন নিজেকে প্রতিনিয়ত গড়ে তোলা, প্রযুক্তির এই অগ্রযাত্রায় উন্নত বিশ্বের সাথে তাল মিলিয়ে চলার প্রথম পদক্ষেপ শুরু হোক এখানেই!",
         lang: "bn",
