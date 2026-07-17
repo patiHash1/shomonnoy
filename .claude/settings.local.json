@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s -m 3 -o /dev/null -w \"%{http_code}\\\\n\" https://registry.npmjs.org/)"
+    ]
+  }
+}

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n="meta.title">Project Shomonnoy — Balancing Screen Time & Real Life</title>
+<meta name="description" content="Project Shomonnoy is a student-led Teach For Bangladesh capstone helping Grade 6-7 students build a healthy balance between screen time and real life.">
+<link rel="icon" href="assets/project_shmonnoy.jpg">
+
+<!-- Fonts: Baloo 2 (playful rounded display — echoes the 'balance/circle' idea), Inter (clean body copy for NGO credibility), Space Mono (data/label accents) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Lucide icons -->
+<script src="https://cdn.jsdelivr.net/npm/lucide@0.372.0/dist/umd/lucide.min.js" defer></script>
+
+<link rel="stylesheet" href="style/style.css">
+
+</head>
+<body>
+
+<!-- =========================================================
+     NAV
+     ========================================================= -->
+<nav class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="#home" class="brand">
+      <img src="assets/project_shmonnoy.jpg" class="brand-mark" alt="Project Shomonnoy logo">
+      <span data-i18n="nav.brand">Shomonnoy</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" class="nav-link-item" data-i18n="nav.links.about">About</a></li>
+      <li><a href="#vision" class="nav-link-item" data-i18n="nav.links.vision">Vision & Mission</a></li>
+      <li><a href="#updates" class="nav-link-item" data-i18n="nav.links.updates">Club Updates</a></li>
+      <li><a href="#network" class="nav-link-item" data-i18n="nav.links.network">Network</a></li>
+      <li><a href="#ebooks" class="nav-link-item" data-i18n="nav.links.ebooks">Resources</a></li>
+      <li><a href="#messages" class="nav-link-item" data-i18n="nav.links.messages">Messages</a></li>
+      <li><a href="#contact" class="nav-cta" data-i18n="nav.cta">Get Involved</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" data-i18n-aria-label="nav.hamburgerLabel" aria-expanded="false"><span></span></button>
+  </div>
+</nav>
+
+<!-- =========================================================
+     HERO
+     ========================================================= -->
+<header class="hero" id="home">
+  <div class="container hero-grid">
+    <div class="reveal in">
+      <div class="eyebrow" data-i18n="hero.eyebrow">A Teach For Bangladesh Student Capstone</div>
+      <h1 data-i18n-html="hero.titleHtml">Balancing the <span class="accent">Screen Time</span> & Real Life</h1>
+      <p class="lead" data-i18n="hero.lead">Project Shomonnoy — meaning "balance" — is a student-led initiative helping Grade 6 and 7 students trade a little scrolling for a lot more living: creativity, hobbies, friendships, and community, one small habit at a time.</p>
+      <div class="hero-ctas">
+        <a href="#contact" class="btn btn-primary"><i data-lucide="handshake"></i> <span data-i18n="hero.ctaPartner">Partner With Us</span></a>
+        <a href="#ebooks" class="btn btn-outline"><i data-lucide="book-open"></i> <span data-i18n="hero.ctaResources">Explore Resources</span></a>
+      </div>
+    </div>
+
+    <!-- Signature element: interactive balance scale, tilts on pointer move -->
+    <div class="balance-stage" id="balanceStage" aria-hidden="true">
+      <svg class="balance-svg" viewBox="0 0 600 420">
+        <!-- stand -->
+        <rect x="292" y="150" width="16" height="180" rx="8" fill="#B9C6D6"/>
+        <ellipse cx="300" cy="336" rx="90" ry="14" fill="#DCE6EE"/>
+        <!-- beam group (rotates) -->
+        <g id="beam">
+          <rect x="80" y="146" width="440" height="8" rx="4" fill="#223349"/>
+          <circle cx="300" cy="150" r="12" fill="#F4A340"/>
+          <!-- left plate: screen side -->
+          <line x1="110" y1="150" x2="110" y2="210" stroke="#B9C6D6" stroke-width="3"/>
+          <line x1="150" y1="150" x2="150" y2="210" stroke="#B9C6D6" stroke-width="3"/>
+          <g class="float">
+            <ellipse cx="130" cy="222" rx="66" ry="16" fill="#E7F1FA"/>
+            <rect x="98" y="150" width="64" height="86" rx="14" fill="#3B82C4"/>
+            <rect x="108" y="162" width="44" height="60" rx="4" fill="#E7F1FA"/>
+            <circle cx="130" cy="230" r="5" fill="#3B82C4"/>
+          </g>
+          <!-- right plate: real life side -->
+          <line x1="450" y1="150" x2="450" y2="196" stroke="#B9C6D6" stroke-width="3"/>
+          <line x1="490" y1="150" x2="490" y2="196" stroke="#B9C6D6" stroke-width="3"/>
+          <g class="float" style="animation-delay:.6s">
+            <ellipse cx="470" cy="208" rx="66" ry="16" fill="#E1F5EE"/>
+            <circle cx="450" cy="176" r="24" fill="#F4A340"/>
+            <path d="M486 200 Q500 160 486 130 Q472 160 486 190Z" fill="#45B996"/>
+            <circle cx="494" cy="190" r="10" fill="#45B996"/>
+          </g>
+        </g>
+        <circle class="pulse-ring" cx="300" cy="150" r="70" fill="none" stroke="#3B82C4" stroke-width="1.5"/>
+      </svg>
+    </div>
+  </div>
+
+  <div class="container stats reveal" id="statsGrid">
+    <div class="stat"><b>500+</b><span>Students Reached</span></div>
+    <div class="stat"><b>12</b><span>Workshops Run</span></div>
+    <div class="stat"><b>40+ hrs</b><span>Screen-Free Play Logged</span></div>
+    <div class="stat"><b>3</b><span>Partner Schools</span></div>
+  </div>
+
+  <div class="container credibility-strip reveal">
+    <img src="assets/teach_for_bangladesh.jpg" alt="Teach For Bangladesh" class="credibility-logo">
+  </div>
+</header>
+
+<!-- =========================================================
+     ABOUT
+     ========================================================= -->
+<section id="about">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow" data-i18n="about.eyebrow">About the Project</div>
+      <h2 data-i18n="about.heading">Why Shomonnoy exists</h2>
+      <p data-i18n="about.intro">Every capstone starts with a real problem. Ours was sitting in plain sight, on the desks of the very students we teach.</p>
+    </div>
+    <div class="about-grid">
+      <div class="about-visual reveal">
+        <svg viewBox="0 0 200 200" fill="none">
+          <circle cx="100" cy="100" r="70" fill="rgba(255,255,255,0.18)"/>
+          <circle cx="100" cy="100" r="45" fill="rgba(255,255,255,0.28)"/>
+          <path d="M70 100 L92 122 L134 78" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        </svg>
+      </div>
+      <div>
+        <div class="about-card reveal">
+          <h3><i data-lucide="flag"></i><span data-i18n="about.cards.background.title">Background</span></h3>
+          <p data-i18n="about.cards.background.text">Project Shomonnoy was designed and built by a Teach For Bangladesh Fellow as a student-facing capstone, developed together with Grade 6–7 students, teachers, and school leadership to be practical, playful, and genuinely useful.</p>
+        </div>
+        <div class="about-card reveal">
+          <h3><i data-lucide="alert-triangle"></i><span data-i18n="about.cards.problem.title">The Problem</span></h3>
+          <p data-i18n="about.cards.problem.text">Screen time among 11–14 year-olds has climbed sharply, often crowding out sleep, outdoor play, reading, and face-to-face friendships — with real effects on attention, mood, and physical activity.</p>
+        </div>
+        <div class="about-card reveal">
+          <h3><i data-lucide="sparkles"></i><span data-i18n="about.cards.whyItMatters.title">Why It Matters</span></h3>
+          <p data-i18n="about.cards.whyItMatters.text">The goal isn't to villainize screens — it's to help students build a healthy, self-aware relationship with technology, so it supports their curiosity and creativity instead of replacing it.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="balance-divider"><div class="line"></div><i data-lucide="scale" style="width:18px;height:18px;color:var(--ink-soft)"></i><div class="line"></div></div>
+
+<!-- =========================================================
+     VISION & MISSION
+     ========================================================= -->
+<section id="vision" class="section-alt">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow" data-i18n="vision.eyebrow">Vision & Mission</div>
+      <h2 data-i18n="vision.heading">What we're building toward</h2>
+    </div>
+    <div class="vm-grid">
+      <div class="vm-card vision reveal">
+        <i class="bg-icon" data-lucide="telescope"></i>
+        <div class="eyebrow" data-i18n="vision.visionCard.label">Vision</div>
+        <h3 data-i18n="vision.visionCard.title">A generation that chooses balance, not restriction.</h3>
+        <p data-i18n="vision.visionCard.text">We imagine students who use technology with intention — confident enough to put the phone down and pick up a paintbrush, a football, or a friend.</p>
+      </div>
+      <div class="vm-card mission reveal">
+        <i class="bg-icon" data-lucide="compass"></i>
+        <div class="eyebrow" data-i18n="vision.missionCard.label">Mission</div>
+        <h3 data-i18n="vision.missionCard.title">Equip students with habits, not just warnings.</h3>
+        <p data-i18n="vision.missionCard.text">Through workshops, challenges, and peer clubs, we give students practical tools to notice their screen habits and replace them with things they genuinely enjoy.</p>
+      </div>
+    </div>
+
+    <div class="values-grid">
+      <div class="value-card reveal">
+        <div class="value-icon" style="background:var(--blue-tint)"><i data-lucide="message-circle-question" style="color:var(--blue-dark)"></i></div>
+        <h4 data-i18n="vision.values.curiosity.title">Curiosity</h4>
+        <p data-i18n="vision.values.curiosity.text">Redirecting screen time energy into asking bigger questions.</p>
+      </div>
+      <div class="value-card reveal">
+        <div class="value-icon" style="background:var(--mint-tint)"><i data-lucide="sliders-horizontal" style="color:var(--teal-ink)"></i></div>
+        <h4 data-i18n="vision.values.balance.title">Balance</h4>
+        <p data-i18n="vision.values.balance.text">Not zero screens — the right amount, at the right time.</p>
+      </div>
+      <div class="value-card reveal">
+        <div class="value-icon" style="background:var(--orange-tint)"><i data-lucide="hand-heart" style="color:var(--amber-ink)"></i></div>
+        <h4 data-i18n="vision.values.community.title">Community</h4>
+        <p data-i18n="vision.values.community.text">Habits stick best when built alongside friends, not alone.</p>
+      </div>
+      <div class="value-card reveal">
+        <div class="value-icon" style="background:var(--blue-tint)"><i data-lucide="wand-sparkles" style="color:var(--blue-dark)"></i></div>
+        <h4 data-i18n="vision.values.creativity.title">Creativity</h4>
+        <p data-i18n="vision.values.creativity.text">Offline hobbies as the reward, not homework in disguise.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     CLUB UPDATES  (rendered from I18N.updates.items — see js/main.js)
+     ========================================================= -->
+<section id="updates">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow" data-i18n="updates.eyebrow">Club Updates</div>
+      <h2 data-i18n="updates.heading">What's happening lately</h2>
+      <p data-i18n="updates.intro">A running log of workshops, milestones, and what's coming next. New entries get added straight to the list below.</p>
+    </div>
+    <div class="updates-feed" id="updatesFeed"></div>
+    <div class="load-more-wrap">
+      <button class="btn btn-outline" id="loadMoreBtn"><i data-lucide="rotate-cw"></i> <span data-i18n="updates.loadMore">Load more updates</span></button>
+    </div>
+  </div>
+</section>
+
+<div class="balance-divider"><div class="line"></div><i data-lucide="scale" style="width:18px;height:18px;color:var(--ink-soft)"></i><div class="line"></div></div>
+
+<!-- =========================================================
+     SHOMONNOY NETWORK (gallery — rendered from I18N.network.items)
+     ========================================================= -->
+<section id="network" class="section-alt">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow" data-i18n="network.eyebrow">Shomonnoy Network</div>
+      <h2 data-i18n="network.heading">Collaborations, campaigns & workshops</h2>
+      <p data-i18n="network.intro">Photos and moments from schools, partners, and volunteers building the balance movement together.</p>
+    </div>
+    <div class="gallery-grid" id="galleryGrid"></div>
+  </div>
+</section>
+
+<!-- =========================================================
+     E-BOOK RESOURCE CENTER (rendered from I18N.ebooks.items)
+     ========================================================= -->
+<section id="ebooks">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow" data-i18n="ebooks.eyebrow">E-Book Resource Center</div>
+      <h2 data-i18n="ebooks.heading">Guidebooks & downloadable resources</h2>
+      <p data-i18n="ebooks.intro">Free materials for students, parents, and teachers — more titles are added here as they're published.</p>
+    </div>
+    <div class="resource-grid" id="resourceGrid"></div>
+  </div>
+</section>
+
+<div class="balance-divider"><div class="line"></div><i data-lucide="scale" style="width:18px;height:18px;color:var(--ink-soft)"></i><div class="line"></div></div>
+
+<!-- =========================================================
+     MESSAGES (rendered from I18N.messages.quotes)
+     ========================================================= -->
+<section id="messages" class="section-alt">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow" data-i18n="messages.eyebrow">Messages</div>
+      <h2 data-i18n="messages.heading">A word from our supporters</h2>
+    </div>
+    <div class="messages-grid" id="messagesGrid"></div>
+  </div>
+</section>
+
+<!-- =========================================================
+     CONTACT & PARTNERSHIP
+     ========================================================= -->
+<section id="contact">
+  <div class="container contact-grid">
+    <div class="reveal">
+      <div class="eyebrow" data-i18n="contact.eyebrow">Contact & Partnership</div>
+      <h2 style="font-size:clamp(1.8rem,3vw,2.4rem); margin-bottom:20px;" data-i18n="contact.heading">Let's build the balance together</h2>
+      <div class="partner-box">
+        <h3 data-i18n="contact.partnerBox.title">Partner with Shomonnoy</h3>
+        <p data-i18n="contact.partnerBox.text">Schools, NGOs, and donors are welcome to collaborate — from hosting a workshop to sponsoring the next guidebook print run.</p>
+        <a href="#contactForm" class="btn btn-primary"><i data-lucide="arrow-down"></i> <span data-i18n="contact.partnerBox.cta">Start a Conversation</span></a>
+      </div>
+      <p style="color:var(--ink-soft); font-size:0.95rem;" data-i18n="contact.socialPrompt">Prefer social media? Find us here — links are placeholders, ready to connect.</p>
+      <div class="social-row">
+        <a href="https://www.facebook.com/patihash.creative.2024" target="_blank" rel="noopener noreferrer" aria-label="Facebook" data-i18n-aria-label="contact.social.facebook"><i data-lucide="facebook"></i></a>
+        <a href="https://www.instagram.com/patihash.creative/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" data-i18n-aria-label="contact.social.instagram"><i data-lucide="instagram"></i></a>
+        <a href="https://www.linkedin.com/company/patihash" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" data-i18n-aria-label="contact.social.linkedin"><i data-lucide="linkedin"></i></a>
+        <a href="#" aria-label="Email" data-i18n-aria-label="contact.social.email"><i data-lucide="mail"></i></a>
+      </div>
+    </div>
+
+    <form class="form-card reveal" id="contactForm">
+      <div class="field">
+        <label for="fullName" data-i18n="contact.form.fullName.label">Full name</label>
+        <input type="text" id="fullName" name="fullName" placeholder="e.g. Ayesha Rahman" data-i18n-placeholder="contact.form.fullName.placeholder" required>
+      </div>
+      <div class="field">
+        <label for="email" data-i18n="contact.form.email.label">Email address</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" data-i18n-placeholder="contact.form.email.placeholder" required>
+      </div>
+      <div class="field">
+        <label for="role" data-i18n="contact.form.role.label">I am a...</label>
+        <select id="role" name="role">
+          <option value="parent" selected>Parent / Guardian</option>
+          <option value="teacher">Teacher / School Leader</option>
+          <option value="ngo">NGO Partner</option>
+          <option value="donor">Donor / Supporter</option>
+          <option value="student">Student</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="message" data-i18n="contact.form.message.label">Message</label>
+        <textarea id="message" name="message" placeholder="Tell us how you'd like to get involved..." data-i18n-placeholder="contact.form.message.placeholder" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">
+        <i data-lucide="send"></i> <span data-i18n="contact.form.submit">Send Message</span>
+      </button>
+      <p class="form-note" data-i18n="contact.form.note">This form is a front-end placeholder — connect it to your email service or backend of choice to receive submissions.</p>
+      <div class="form-success" id="formSuccess"><i data-lucide="check-circle"></i> <span data-i18n="contact.form.success">Thanks! Your message has been noted.</span></div>
+    </form>
+  </div>
+</section>
+
+<!-- =========================================================
+     FOOTER
+     ========================================================= -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/project_shmonnoy.jpg" class="footer-logo" alt="Project Shomonnoy logo">
+        <span data-i18n="footer.brand">Project Shomonnoy</span>
+      </div>
+      <ul class="footer-links">
+        <li><a href="#about" data-i18n="footer.links.about">About</a></li>
+        <li><a href="#vision" data-i18n="footer.links.vision">Vision & Mission</a></li>
+        <li><a href="#updates" data-i18n="footer.links.updates">Club Updates</a></li>
+        <li><a href="#ebooks" data-i18n="footer.links.ebooks">Resources</a></li>
+        <li><a href="#contact" data-i18n="footer.links.contact">Contact</a></li>
+      </ul>
+      <div class="footer-qr">
+        <a href="https://www.patihash.com/" target="_blank" rel="noopener noreferrer" class="footer-qr-card" aria-label="Visit patiHash.com">
+          <img src="assets/patihash-qr.png" alt="QR code linking to patiHash.com" class="footer-qr-code">
+        </a>
+        <span class="footer-qr-label" data-i18n="footer.qrLabel">Scan to visit patiHash.com</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-credit-line">
+        <span data-i18n-html="footer.copyrightHtml">© 2026 Project Shomonnoy · A Teach For Bangladesh Student Capstone powered by <a href="https://www.patihash.com/" target="_blank" rel="noopener noreferrer">patiHash</a></span>
+        <a href="https://www.patihash.com/" target="_blank" rel="noopener noreferrer" aria-label="patiHash" class="credit-logo-link"><img src="assets/patiHash_logo.jpg" alt="patiHash" class="credit-logo credit-logo--round"></a>
+      </div>
+      <span data-i18n="footer.tagline">Built with balance, for balance.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="l10n/en.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
