@@ -999,3 +999,8 @@ html[lang="bn"] h4 {
   50% { transform: rotate(18deg) translate(-4px, 1px); }
 }
 
+.contact-qr-card:hover {
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: var(--shadow-lift) !important;
+}
+

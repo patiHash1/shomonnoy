@@ -151,6 +151,8 @@ window.I18N_EN = {
       cta: "Start a Conversation"
     },
     socialPrompt: "Prefer social media? Find us here — links are placeholders, ready to connect.",
+    qrTitle: "Visit patiHash",
+    qrDesc: "Scan to check patiHash",
     social: {
       facebook: "Facebook",
       instagram: "Instagram",
