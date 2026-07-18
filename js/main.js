@@ -138,49 +138,49 @@ function renderGallery(list){
       // Digital Wellbeing 101 session: presentation laptop scale
       svgContent = `
         <svg class="gallery-svg-laptop" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
-          <path d="M20 86 L100 86 L106 94 L14 94 Z" fill="#142338" stroke="#142338" stroke-width="2" stroke-linejoin="round" />
-          <rect x="28" y="26" width="64" height="48" rx="4" fill="#E7F1FA" stroke="#142338" stroke-width="3" />
-          <line x1="28" y1="68" x2="92" y2="68" stroke="#142338" stroke-width="1.5" />
+          <path d="M20 86 L100 86 L106 94 L14 94 Z" fill="var(--navy)" stroke="var(--navy)" stroke-width="2" stroke-linejoin="round" />
+          <rect x="28" y="26" width="64" height="48" rx="4" fill="var(--blue-tint)" stroke="var(--navy)" stroke-width="3" />
+          <line x1="28" y1="68" x2="92" y2="68" stroke="var(--navy)" stroke-width="1.5" />
           <g class="svg-laptop-beam">
-            <line x1="42" y1="44" x2="78" y2="44" stroke="#F4A340" stroke-width="2" stroke-linecap="round" />
-            <circle cx="60" cy="44" r="3" fill="#142338" />
-            <line x1="46" y1="44" x2="46" y2="54" stroke="#223349" stroke-width="1" />
-            <path d="M40 54 L52 54" stroke="#223349" stroke-width="2" stroke-linecap="round" />
-            <rect x="42" y="47" width="8" height="7" rx="1.5" fill="#3B82C4" />
-            <line x1="74" y1="44" x2="74" y2="54" stroke="#223349" stroke-width="1" />
-            <path d="M68 54 L80 54" stroke="#223349" stroke-width="2" stroke-linecap="round" />
-            <circle cx="74" cy="50" r="4.5" fill="#45B996" />
+            <line x1="42" y1="44" x2="78" y2="44" stroke="var(--orange)" stroke-width="2" stroke-linecap="round" />
+            <circle cx="60" cy="44" r="3" fill="var(--navy)" />
+            <line x1="46" y1="44" x2="46" y2="54" stroke="var(--ink)" stroke-width="1" />
+            <path d="M40 54 L52 54" stroke="var(--ink)" stroke-width="2" stroke-linecap="round" />
+            <rect x="42" y="47" width="8" height="7" rx="1.5" fill="var(--blue)" />
+            <line x1="74" y1="44" x2="74" y2="54" stroke="var(--ink)" stroke-width="1" />
+            <path d="M68 54 L80 54" stroke="var(--ink)" stroke-width="2" stroke-linecap="round" />
+            <circle cx="74" cy="50" r="4.5" fill="var(--mint)" />
           </g>
-          <rect x="56" y="74" width="8" height="12" fill="#142338" />
+          <rect x="56" y="74" width="8" height="12" fill="var(--navy)" />
         </svg>
       `;
     } else if (idx === 1) {
       // Screen-Free Saturday photo wall: camera flash
       svgContent = `
         <svg class="gallery-svg-camera" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
-          <rect x="22" y="38" width="76" height="52" rx="8" fill="#45B996" stroke="#1F7A5C" stroke-width="3" />
-          <rect x="74" y="26" width="16" height="12" rx="3" fill="#1F7A5C" />
-          <circle cx="60" cy="64" r="22" fill="#E1F5EE" stroke="#1F7A5C" stroke-width="3" />
-          <circle class="svg-camera-lens" cx="60" cy="64" r="14" fill="#142338" />
-          <circle cx="56" cy="60" r="4" fill="#FFFFFF" opacity="0.8" />
-          <circle class="svg-camera-flash" cx="82" cy="18" r="14" fill="#F4A340" opacity="0.7" />
-          <rect x="36" y="90" width="48" height="6" rx="1" fill="#FFFFFF" stroke="#1F7A5C" stroke-width="1.5" />
+          <rect x="22" y="38" width="76" height="52" rx="8" fill="var(--mint)" stroke="var(--teal-ink)" stroke-width="3" />
+          <rect x="74" y="26" width="16" height="12" rx="3" fill="var(--teal-ink)" />
+          <circle cx="60" cy="64" r="22" fill="var(--mint-tint)" stroke="var(--teal-ink)" stroke-width="3" />
+          <circle class="svg-camera-lens" cx="60" cy="64" r="14" fill="var(--navy)" />
+          <circle cx="56" cy="60" r="4" fill="var(--white)" opacity="0.8" />
+          <circle class="svg-camera-flash" cx="82" cy="18" r="14" fill="var(--orange)" opacity="0.7" />
+          <rect x="36" y="90" width="48" height="6" rx="1" fill="var(--white)" stroke="var(--teal-ink)" stroke-width="1.5" />
         </svg>
       `;
     } else if (idx === 2) {
       // MoU signing: contract scroll
       svgContent = `
         <svg class="gallery-svg-contract" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
-          <path d="M26 18 L86 18 C90 18 94 22 94 26 L94 92 C94 96 90 100 86 100 L26 100 C22 100 18 96 18 92 L18 26 C18 22 22 18 26 18 Z" fill="#FBFCFE" stroke="#C97A1E" stroke-width="3" />
-          <line x1="32" y1="36" x2="82" y2="36" stroke="#FDEEDA" stroke-width="4" stroke-linecap="round" />
-          <line x1="32" y1="48" x2="82" y2="48" stroke="#FDEEDA" stroke-width="4" stroke-linecap="round" />
-          <line x1="32" y1="60" x2="68" y2="60" stroke="#FDEEDA" stroke-width="4" stroke-linecap="round" />
-          <line x1="32" y1="72" x2="52" y2="72" stroke="#FDEEDA" stroke-width="4" stroke-linecap="round" />
-          <circle cx="56" cy="84" r="10" fill="#F4A340" />
-          <polygon points="56,76 60,82 66,82 61,86 63,92 56,88 49,92 51,86 46,82 52,82" fill="#FFFFFF" />
+          <path d="M26 18 L86 18 C90 18 94 22 94 26 L94 92 C94 96 90 100 86 100 L26 100 C22 100 18 96 18 92 L18 26 C18 22 22 18 26 18 Z" fill="var(--paper)" stroke="var(--orange-press)" stroke-width="3" />
+          <line x1="32" y1="36" x2="82" y2="36" stroke="var(--orange-tint)" stroke-width="4" stroke-linecap="round" />
+          <line x1="32" y1="48" x2="82" y2="48" stroke="var(--orange-tint)" stroke-width="4" stroke-linecap="round" />
+          <line x1="32" y1="60" x2="68" y2="60" stroke="var(--orange-tint)" stroke-width="4" stroke-linecap="round" />
+          <line x1="32" y1="72" x2="52" y2="72" stroke="var(--orange-tint)" stroke-width="4" stroke-linecap="round" />
+          <circle cx="56" cy="84" r="10" fill="var(--orange)" />
+          <polygon points="56,76 60,82 66,82 61,86 63,92 56,88 49,92 51,86 46,82 52,82" fill="var(--white)" />
           <g class="svg-contract-pen">
-            <path d="M84 48 Q94 24 102 12 Q90 18 80 34 Z" fill="#3B82C4" stroke="#245A85" stroke-width="1.5" />
-            <line x1="80" y1="34" x2="74" y2="44" stroke="#245A85" stroke-width="3.5" stroke-linecap="round" />
+            <path d="M84 48 Q94 24 102 12 Q90 18 80 34 Z" fill="var(--blue)" stroke="var(--blue-dark)" stroke-width="1.5" />
+            <line x1="80" y1="34" x2="74" y2="44" stroke="var(--blue-dark)" stroke-width="3.5" stroke-linecap="round" />
           </g>
         </svg>
       `;
@@ -188,16 +188,16 @@ function renderGallery(list){
       // Hobby swap-meet: painter's palette
       svgContent = `
         <svg class="gallery-svg-palette" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
-          <path d="M30 25 C60 10, 100 20, 100 50 C100 80, 85 96, 65 96 C50 96, 46 84, 34 84 C22 84, 14 90, 14 74 C14 55, 10 35, 30 25 Z" fill="#FBFCFE" stroke="#45B996" stroke-width="3.5" stroke-linejoin="round" />
-          <circle cx="28" cy="70" r="7" fill="#E1F5EE" stroke="#45B996" stroke-width="2" />
-          <circle cx="42" cy="38" r="9" fill="#3B82C4" />
-          <circle cx="68" cy="32" r="9" fill="#F4A340" />
-          <circle cx="86" cy="48" r="9" fill="#45B996" />
-          <circle cx="82" cy="74" r="9" fill="#E7F1FA" />
+          <path d="M30 25 C60 10, 100 20, 100 50 C100 80, 85 96, 65 96 C50 96, 46 84, 34 84 C22 84, 14 90, 14 74 C14 55, 10 35, 30 25 Z" fill="var(--paper)" stroke="var(--mint)" stroke-width="3.5" stroke-linejoin="round" />
+          <circle cx="28" cy="70" r="7" fill="var(--mint-tint)" stroke="var(--mint)" stroke-width="2" />
+          <circle cx="42" cy="38" r="9" fill="var(--blue)" />
+          <circle cx="68" cy="32" r="9" fill="var(--orange)" />
+          <circle cx="86" cy="48" r="9" fill="var(--mint)" />
+          <circle cx="82" cy="74" r="9" fill="var(--blue-tint)" />
           <g class="svg-palette-brush">
-            <line x1="88" y1="28" x2="36" y2="88" stroke="#C97A1E" stroke-width="3.5" stroke-linecap="round" />
-            <line x1="88" y1="28" x2="92" y2="24" stroke="#B9C6D6" stroke-width="4.5" />
-            <path d="M92 24 L98 16 L94 14 L88 22 Z" fill="#F4A340" />
+            <line x1="88" y1="28" x2="36" y2="88" stroke="var(--orange-press)" stroke-width="3.5" stroke-linecap="round" />
+            <line x1="88" y1="28" x2="92" y2="24" stroke="var(--neutral-press)" stroke-width="4.5" />
+            <path d="M92 24 L98 16 L94 14 L88 22 Z" fill="var(--orange)" />
           </g>
         </svg>
       `;
@@ -205,28 +205,28 @@ function renderGallery(list){
       // Balance Pledge wall: smiling heart with stars
       svgContent = `
         <svg class="gallery-svg-pledge" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="60" cy="60" r="48" fill="#E1F5EE" stroke="#45B996" stroke-dasharray="6,4" stroke-width="2" />
-          <path class="svg-pledge-heart" d="M60 84 C56 80 28 62 28 44 C28 32 38 22 50 22 C56 22 60 26 60 26 C60 26 64 22 70 22 C82 22 92 32 92 44 C92 62 64 80 60 84 Z" fill="#45B996" stroke="#1F7A5C" stroke-width="3" />
-          <circle cx="48" cy="42" r="2.5" fill="#FFFFFF" />
-          <circle cx="72" cy="42" r="2.5" fill="#FFFFFF" />
-          <path d="M52 54 Q60 60 68 54" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" />
-          <path class="svg-pledge-star1" d="M22 28 L24 33 L29 34 L25 38 L26 43 L22 40 L18 43 L19 38 L15 34 L20 33 Z" fill="#F4A340" />
-          <path class="svg-pledge-star2" d="M96 82 L98 87 L103 88 L99 92 L100 97 L96 94 L92 97 L93 92 L89 88 L94 87 Z" fill="#F4A340" />
+          <circle cx="60" cy="60" r="48" fill="var(--mint-tint)" stroke="var(--mint)" stroke-dasharray="6,4" stroke-width="2" />
+          <path class="svg-pledge-heart" d="M60 84 C56 80 28 62 28 44 C28 32 38 22 50 22 C56 22 60 26 60 26 C60 26 64 22 70 22 C82 22 92 32 92 44 C92 62 64 80 60 84 Z" fill="var(--mint)" stroke="var(--teal-ink)" stroke-width="3" />
+          <circle cx="48" cy="42" r="2.5" fill="var(--white)" />
+          <circle cx="72" cy="42" r="2.5" fill="var(--white)" />
+          <path d="M52 54 Q60 60 68 54" stroke="var(--white)" stroke-width="2.5" stroke-linecap="round" />
+          <path class="svg-pledge-star1" d="M22 28 L24 33 L29 34 L25 38 L26 43 L22 40 L18 43 L19 38 L15 34 L20 33 Z" fill="var(--orange)" />
+          <path class="svg-pledge-star2" d="M96 82 L98 87 L103 88 L99 92 L100 97 L96 94 L92 97 L93 92 L89 88 L94 87 Z" fill="var(--orange)" />
         </svg>
       `;
     } else {
       // Storytelling: open book with campfire
       svgContent = `
         <svg class="gallery-svg-story" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
-          <path d="M14 84 Q60 92 60 92 Q60 92 106 84" stroke="#C97A1E" stroke-width="3" fill="none" />
-          <path d="M14 84 L14 50 Q60 60 60 60 Q60 60 106 50 L106 84 Q60 92 60 92 Q60 92 14 84 Z" fill="#FBFCFE" stroke="#C97A1E" stroke-width="2" />
-          <line x1="42" y1="78" x2="78" y2="70" stroke="#9A5B0E" stroke-width="4.5" stroke-linecap="round" />
-          <line x1="44" y1="68" x2="76" y2="78" stroke="#9A5B0E" stroke-width="4.5" stroke-linecap="round" />
-          <path class="svg-story-flame1" d="M46 68 Q54 44 54 44 Q56 56 62 56 Q62 56 68 46 Q64 68 46 68 Z" fill="#F4A340" />
-          <path class="svg-story-flame2" d="M52 68 Q58 36 58 36 Q64 48 68 48 Q72 58 72 58 Q66 68 52 68 Z" fill="#F4A340" opacity="0.3" />
-          <path class="svg-story-flame3" d="M52 68 Q58 50 58 50 Q60 56 64 56 Q62 68 52 68 Z" fill="#FFFFFF" opacity="0.85" />
-          <circle class="svg-story-spark svg-story-spark1" cx="38" cy="40" r="2.5" fill="#F4A340" />
-          <circle class="svg-story-spark svg-story-spark2" cx="72" cy="30" r="2" fill="#F4A340" />
+          <path d="M14 84 Q60 92 60 92 Q60 92 106 84" stroke="var(--orange-press)" stroke-width="3" fill="none" />
+          <path d="M14 84 L14 50 Q60 60 60 60 Q60 60 106 50 L106 84 Q60 92 60 92 Q60 92 14 84 Z" fill="var(--paper)" stroke="var(--orange-press)" stroke-width="2" />
+          <line x1="42" y1="78" x2="78" y2="70" stroke="var(--amber-ink)" stroke-width="4.5" stroke-linecap="round" />
+          <line x1="44" y1="68" x2="76" y2="78" stroke="var(--amber-ink)" stroke-width="4.5" stroke-linecap="round" />
+          <path class="svg-story-flame1" d="M46 68 Q54 44 54 44 Q56 56 62 56 Q62 56 68 46 Q64 68 46 68 Z" fill="var(--orange)" />
+          <path class="svg-story-flame2" d="M52 68 Q58 36 58 36 Q64 48 68 48 Q72 58 72 58 Q66 68 52 68 Z" fill="var(--orange)" opacity="0.3" />
+          <path class="svg-story-flame3" d="M52 68 Q58 50 58 50 Q60 56 64 56 Q62 68 52 68 Z" fill="var(--white)" opacity="0.85" />
+          <circle class="svg-story-spark svg-story-spark1" cx="38" cy="40" r="2.5" fill="var(--orange)" />
+          <circle class="svg-story-spark svg-story-spark2" cx="72" cy="30" r="2" fill="var(--orange)" />
         </svg>
       `;
     }

@@ -97,12 +97,12 @@ window.I18N_BN = {
     heading: "অংশীদারিত্ব, ক্যাম্পেইন ও কর্মশালা",
     intro: "ভারসাম্যপূর্ণ জীবন গড়তে বিদ্যালয়, অংশীদার ও স্বেচ্ছাসেবকদের যৌথ মুহূর্তগুলোর কিছু ছবি ও কোলাজ।",
     items: [
-      { cat:"কর্মশালা", title: "ডিজিটাল সুস্থতা ১০১ সেশন", icon:"presentation", grad:"linear-gradient(135deg, #3B82C4, #245A85)" },
-      { cat:"ক্যাম্পেইন", title:"স্ক্রিন-মুক্ত শনিবারের ফটো ওয়াল", icon:"camera", grad:"linear-gradient(135deg, #45B996, #1F7A5C)" },
-      { cat:"অংশীদারিত্ব", title:"বিদ্যালয়ের সাথে সমঝোতা স্মারক স্বাক্ষর", icon:"handshake", grad:"linear-gradient(135deg, #F4A340, #C97A1E)" },
-      { cat:"কর্মশালা", title:"শখ বিনিময় ও আড্ডার বিকেল", icon:"paintbrush", grad:"linear-gradient(135deg, #3B82C4, #45B996)" },
-      { cat:"ক্যাম্পেইন", title:"ভারসাম্য শপথ প্রাচীর", icon:"heart-handshake", grad:"linear-gradient(135deg, #45B996, #3B82C4)" },
-      { cat:"কর্মশালা", title:"স্ক্রিন ছাড়াই গল্প বলার আসর", icon:"book-open", grad:"linear-gradient(135deg, #F4A340, #3B82C4)" }
+      { cat:"কর্মশালা", title: "ডিজিটাল সুস্থতা ১০১ সেশন", icon:"presentation", grad:"linear-gradient(135deg, var(--blue), var(--blue-dark))" },
+      { cat:"ক্যাম্পেইন", title:"স্ক্রিন-মুক্ত শনিবারের ফটো ওয়াল", icon:"camera", grad:"linear-gradient(135deg, var(--mint), var(--teal-ink))" },
+      { cat:"অংশীদারিত্ব", title:"বিদ্যালয়ের সাথে সমঝোতা স্মারক স্বাক্ষর", icon:"handshake", grad:"linear-gradient(135deg, var(--orange), var(--orange-press))" },
+      { cat:"কর্মশালা", title:"শখ বিনিময় ও আড্ডার বিকেল", icon:"paintbrush", grad:"linear-gradient(135deg, var(--blue), var(--mint))" },
+      { cat:"ক্যাম্পেইন", title:"ভারসাম্য শপথ প্রাচীর", icon:"heart-handshake", grad:"linear-gradient(135deg, var(--mint), var(--blue))" },
+      { cat:"কর্মশালা", title:"স্ক্রিন ছাড়াই গল্প বলার আসর", icon:"book-open", grad:"linear-gradient(135deg, var(--orange), var(--blue))" }
     ]
   },
 
@@ -112,9 +112,9 @@ window.I18N_BN = {
     intro: "শিক্ষার্থী, অভিভাবক ও শিক্ষকদের জন্য বিনামূল্যে পড়ার সামগ্রী — নতুন প্রকাশনাগুলো এখানেই যুক্ত হবে।",
     downloadLabel: "ডাউনলোড করুন",
     items: [
-      { title:"সমন্বয় গাইডবুক", desc:"ডিজিটাল অভ্যাস গড়ে তোলার জন্য ষষ্ঠ-সপ্তম শ্রেণীর শিক্ষার্থীদের একটি সহায়ক গাইডবুক।", size:"৪.২ এমবি · পিডিএফ", icon:"book-marked", grad:"linear-gradient(160deg, #3B82C4, #245A85)" },
-      { title:"অভিভাবকদের জন্য নির্দেশিকা", desc:"অভিভাবকদের জন্য সন্তানদের সাথে আলোচনার কিছু কৌশল ও পরামর্শ।", size:"১.১ এমবি · পিডিএফ", icon:"file-text", grad:"linear-gradient(160deg, #45B996, #1F7A5C)" },
-      { title:"শ্রেণীকক্ষের অ্যাক্টিভিটি প্যাক", desc:"প্রোগ্রামটি চালু করার জন্য শিক্ষকদের জন্য প্রস্তুতকৃত কিছু গ্রুপ অ্যাক্টিভিটি।", size:"৩.৫ এমবি · পিডিএফ", icon:"clipboard-list", grad:"linear-gradient(160deg, #F4A340, #C97A1E)" }
+      { title:"সমন্বয় গাইডবুক", desc:"ডিজিটাল অভ্যাস গড়ে তোলার জন্য ষষ্ঠ-সপ্তম শ্রেণীর শিক্ষার্থীদের একটি সহায়ক গাইডবুক।", size:"৪.২ এমবি · পিডিএফ", icon:"book-marked", grad:"linear-gradient(160deg, var(--blue), var(--blue-dark))" },
+      { title:"অভিভাবকদের জন্য নির্দেশিকা", desc:"অভিভাবকদের জন্য সন্তানদের সাথে আলোচনার কিছু কৌশল ও পরামর্শ।", size:"১.১ এমবি · পিডিএফ", icon:"file-text", grad:"linear-gradient(160deg, var(--mint), var(--teal-ink))" },
+      { title:"শ্রেণীকক্ষের অ্যাক্টিভিটি প্যাক", desc:"প্রোগ্রামটি চালু করার জন্য শিক্ষকদের জন্য প্রস্তুতকৃত কিছু গ্রুপ অ্যাক্টিভিটি।", size:"৩.৫ এমবি · পিডিএফ", icon:"clipboard-list", grad:"linear-gradient(160deg, var(--orange), var(--orange-press))" }
     ]
   },
 

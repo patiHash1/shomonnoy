@@ -5,44 +5,44 @@
    ========================================================= */
 :root{
   /* Brand palette */
-  --blue: #3B82C4;
-  --blue-dark: #245A85;
-  --blue-tint: #E7F1FA;
-  --mint: #45B996;
-  --mint-tint: #E1F5EE;
-  --orange: #F4A340;
-  --orange-tint: #FDEEDA;
-  --navy: #142338;
-  --ink: #223349;
-  --ink-soft: #55677C;
+  --blue: #4988C4;
+  --blue-dark: #1C4D8D;
+  --blue-tint: #BDE8F5;
+  --mint: #4988C4;
+  --mint-tint: #DDF2F8;
+  --orange: #1C4D8D;
+  --orange-tint: #BDE8F5;
+  --navy: #0F2854;
+  --ink: #192A47;
+  --ink-soft: #4E658C;
   --paper: #FBFCFE;
-  --mist: #F1F6F5;
+  --mist: #F1F7F9;
   --white: #FFFFFF;
 
   /* Surfaces & elevation */
-  --line: rgba(20,35,56,0.09);
-  --glass: rgba(231,241,250,0.75);
-  --glass-border: rgba(178,206,230,0.7);
-  --shadow-soft: 0 10px 30px rgba(20,50,80,0.08);
-  --shadow-lift: 0 20px 45px rgba(20,50,80,0.14);
+  --line: rgba(15,40,84,0.09);
+  --glass: rgba(189,232,245,0.75);
+  --glass-border: rgba(73,136,196,0.4);
+  --shadow-soft: 0 10px 30px rgba(15,40,84,0.08);
+  --shadow-lift: 0 20px 45px rgba(15,40,84,0.14);
   --shadow-menu: -20px 0 50px rgba(0,0,0,0.12);
 
   /* Text-on-tint accents (used over orange-tint / mint-tint backgrounds) */
-  --amber-ink: #9A5B0E;
-  --teal-ink: #1F7A5C;
+  --amber-ink: #0F2854;
+  --teal-ink: #1C4D8D;
 
   /* Button glow accents (ambient hover/focus glow, no offset) */
-  --orange-glow: rgba(244,163,64,0.35);
-  --orange-glow-strong: rgba(244,163,64,0.45);
-  --blue-glow: rgba(59,130,196,0.35);
-  --blue-glow-strong: rgba(59,130,196,0.45);
-  --mint-glow: rgba(69,185,150,0.35);
-  --mint-glow-strong: rgba(69,185,150,0.45);
+  --orange-glow: rgba(28, 77, 141, 0.35);
+  --orange-glow-strong: rgba(28, 77, 141, 0.45);
+  --blue-glow: rgba(73, 136, 196, 0.35);
+  --blue-glow-strong: rgba(73, 136, 196, 0.45);
+  --mint-glow: rgba(73, 136, 196, 0.35);
+  --mint-glow-strong: rgba(73, 136, 196, 0.45);
 
   /* Button "press" base — a darker shade of each button color, used as
      the 3D pressed-edge beneath the button face */
-  --orange-press: #C97A1E;
-  --neutral-press: #C7D3DE;
+  --orange-press: #0F2854;
+  --neutral-press: #B8CBD8;
 
   /* White at reduced opacity, for text/borders on dark backgrounds */
   --white-90: rgba(255,255,255,0.9);

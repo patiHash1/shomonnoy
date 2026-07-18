@@ -103,12 +103,12 @@ window.I18N_EN = {
     heading: "Collaborations, campaigns & workshops",
     intro: "Photos and moments from schools, partners, and volunteers building the balance movement together.",
     items: [
-      { cat:"Workshop", title:"Digital Wellbeing 101 session", icon:"presentation", grad:"linear-gradient(135deg, #3B82C4, #245A85)" },
-      { cat:"Campaign", title:"Screen-Free Saturday photo wall", icon:"camera", grad:"linear-gradient(135deg, #45B996, #1F7A5C)" },
-      { cat:"Partnership", title:"MoU signing with partner school", icon:"handshake", grad:"linear-gradient(135deg, #F4A340, #C97A1E)" },
-      { cat:"Workshop", title:"Hobby swap-meet afternoon", icon:"paintbrush", grad:"linear-gradient(135deg, #3B82C4, #45B996)" },
-      { cat:"Campaign", title:"Balance Pledge wall", icon:"heart-handshake", grad:"linear-gradient(135deg, #45B996, #3B82C4)" },
-      { cat:"Workshop", title:"Storytelling without screens", icon:"book-open", grad:"linear-gradient(135deg, #F4A340, #3B82C4)" }
+      { cat:"Workshop", title:"Digital Wellbeing 101 session", icon:"presentation", grad:"linear-gradient(135deg, var(--blue), var(--blue-dark))" },
+      { cat:"Campaign", title:"Screen-Free Saturday photo wall", icon:"camera", grad:"linear-gradient(135deg, var(--mint), var(--teal-ink))" },
+      { cat:"Partnership", title:"MoU signing with partner school", icon:"handshake", grad:"linear-gradient(135deg, var(--orange), var(--orange-press))" },
+      { cat:"Workshop", title:"Hobby swap-meet afternoon", icon:"paintbrush", grad:"linear-gradient(135deg, var(--blue), var(--mint))" },
+      { cat:"Campaign", title:"Balance Pledge wall", icon:"heart-handshake", grad:"linear-gradient(135deg, var(--mint), var(--blue))" },
+      { cat:"Workshop", title:"Storytelling without screens", icon:"book-open", grad:"linear-gradient(135deg, var(--orange), var(--blue))" }
       // Add future gallery items here, following the same shape.
     ]
   },
@@ -119,9 +119,9 @@ window.I18N_EN = {
     intro: "Free materials for students, parents, and teachers — more titles are added here as they're published.",
     downloadLabel: "Download",
     items: [
-      { title:"The Shomonnoy Guidebook", desc:"A grade 6–7 companion guide for building balanced digital habits.", size:"4.2 MB · PDF", icon:"book-marked", grad:"linear-gradient(160deg, #3B82C4, #245A85)" },
-      { title:"Parent's Quick Reference", desc:"Conversation starters and screen-time tips for guardians.", size:"1.1 MB · PDF", icon:"file-text", grad:"linear-gradient(160deg, #45B996, #1F7A5C)" },
-      { title:"Classroom Activity Pack", desc:"Ready-to-run activities for teachers introducing the program.", size:"3.5 MB · PDF", icon:"clipboard-list", grad:"linear-gradient(160deg, #F4A340, #C97A1E)" }
+      { title:"The Shomonnoy Guidebook", desc:"A grade 6–7 companion guide for building balanced digital habits.", size:"4.2 MB · PDF", icon:"book-marked", grad:"linear-gradient(160deg, var(--blue), var(--blue-dark))" },
+      { title:"Parent's Quick Reference", desc:"Conversation starters and screen-time tips for guardians.", size:"1.1 MB · PDF", icon:"file-text", grad:"linear-gradient(160deg, var(--mint), var(--teal-ink))" },
+      { title:"Classroom Activity Pack", desc:"Ready-to-run activities for teachers introducing the program.", size:"3.5 MB · PDF", icon:"clipboard-list", grad:"linear-gradient(160deg, var(--orange), var(--orange-press))" }
       // Add future downloadable resources here, following the same shape.
     ]
   },
