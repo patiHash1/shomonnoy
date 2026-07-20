@@ -103,21 +103,27 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   transition:width .2s var(--ease);
 }
 .nav-links a:hover::after, .nav-links a:focus-visible::after{width:100%;}
-.nav-cta{
-  background: var(--orange); color: var(--white); padding:10px 20px; border-radius:999px;
-  font-weight:700; font-size:0.9rem; border:none; transform:translateY(0);
+.nav-links a.nav-cta{
+  display: inline-block;
+  background: var(--orange); color: var(--white); padding: 10px 24px; border-radius: 999px;
+  font-weight: 700; font-size: 0.9rem; border: none; transform: translateY(0);
   box-shadow: 0 4px 0 var(--orange-press), var(--shadow-soft);
-  transition: transform .15s var(--ease), box-shadow .15s var(--ease), background-color 0.15s var(--ease);
+  transition: transform .15s var(--ease), box-shadow .15s var(--ease), background-color 0.15s var(--ease), color 0.15s var(--ease);
 }
-.nav-cta::after {
+.nav-links a.nav-cta::after {
   content: none !important;
 }
-.nav-cta:hover{
+.nav-links a.nav-cta:hover{
   transform: translateY(-2px) scale(1.03); 
   box-shadow: 0 6px 0 var(--orange-press), 0 8px 16px var(--orange-glow);
   background: linear-gradient(135deg, var(--blue) 0%, var(--blue-dark) 100%);
+  color: var(--white);
 }
-.nav-cta:active{transform:translateY(2px) scale(0.98); box-shadow: 0 1px 0 var(--orange-press);}
+.nav-links a.nav-cta:active{
+  transform: translateY(2px) scale(0.98);
+  box-shadow: 0 1px 0 var(--orange-press);
+  color: var(--white);
+}
 .hamburger{
   display:none; width:42px; height:42px; border:none; background:transparent;
   align-items:center; justify-content:center;
