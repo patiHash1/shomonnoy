@@ -8,7 +8,7 @@
    ========================================================= */
 window.I18N_EN = {
   meta: {
-    title: "Project Shomonnoy — Balancing Screen Time & Real Life",
+    title: "Project Shomonnoy Balancing Screen Time & Real Life",
     description: "Project Shomonnoy is a student-led Teach For Bangladesh capstone helping Grade 6-7 students build a healthy balance between screen time and real life."
   },
 
@@ -27,18 +27,18 @@ window.I18N_EN = {
   },
 
   hero: {
-    eyebrow: "A Teach For Bangladesh Student Capstone",
+    eyebrow: "A Teach For Bangladesh student led capstone project",
     titleHtml: "Balancing the <span class=\"accent\">Screen Time</span> & Real Life",
-    lead: "Project Shomonnoy — meaning \"balance\" — is a student-led initiative helping Grade 6 and 7 students trade a little scrolling for a lot more living: creativity, hobbies, friendships, and community, one small habit at a time.",
+    lead: "Project Shomonnoy meaning \"balance\"  is a student-led initiative helping Grade 6 and 7 students trade a little scrolling for a lot more living: creativity, hobbies, friendships, and community, one small habit at a time.",
     ctaPartner: "Partner With Us",
     ctaResources: "Explore Resources"
   },
 
   stats: {
-    students: { value: "500+", label: "Students Reached" },
-    workshops: { value: "12", label: "Workshops Run" },
+    students: { value: "500+", label: "Stakeholders Reached" },
+    workshops: { value: "12+", label: "Inhouse Workshops" },
     screenFreeHours: { value: "40+ hrs", label: "Screen-Free Play Logged" },
-    partnerSchools: { value: "3", label: "Partner Schools" }
+    sustainabilityPartners: { value: "3", label: "Sustainability Partners" }
   },
 
   about: {
@@ -52,11 +52,11 @@ window.I18N_EN = {
       },
       problem: {
         title: "The Problem",
-        text: "Screen time among 11–14 year-olds has climbed sharply, often crowding out sleep, outdoor play, reading, and face-to-face friendships — with real effects on attention, mood, and physical activity."
+        text: "Screen time among 11–14 year-olds has climbed sharply, often crowding out sleep, outdoor play, reading, and face-to-face friendships with real effects on attention, mood, and physical activity."
       },
       whyItMatters: {
         title: "Why It Matters",
-        text: "The goal isn't to villainize screens — it's to help students build a healthy, self-aware relationship with technology, so it supports their curiosity and creativity instead of replacing it."
+        text: "The goal isn't to villainize screens it's to help students build a healthy, self-aware relationship with technology, so it supports their curiosity and creativity instead of replacing it."
       }
     }
   },
@@ -67,7 +67,7 @@ window.I18N_EN = {
     visionCard: {
       label: "Vision",
       title: "A generation that chooses balance, not restriction.",
-      text: "We imagine students who use technology with intention — confident enough to put the phone down and pick up a paintbrush, a football, or a friend."
+      text: "We imagine students who use technology with intention confident enough to put the phone down and pick up a paintbrush, a football, or a friend."
     },
     missionCard: {
       label: "Mission",
@@ -76,7 +76,7 @@ window.I18N_EN = {
     },
     values: {
       curiosity: { title: "Curiosity", text: "Redirecting screen time energy into asking bigger questions." },
-      balance: { title: "Balance", text: "Not zero screens — the right amount, at the right time." },
+      balance: { title: "Balance", text: "Not zero screens the right amount, at the right time." },
       community: { title: "Community", text: "Habits stick best when built alongside friends, not alone." },
       creativity: { title: "Creativity", text: "Offline hobbies as the reward, not homework in disguise." }
     }
@@ -88,7 +88,7 @@ window.I18N_EN = {
     intro: "A running log of workshops, milestones, and what's coming next. New entries get added straight to the list below.",
     loadMore: "Load more updates",
     items: [
-      { date:"MAR\n2026", tag:"event", tagLabel:"Event", title:"Screen-Free Saturday Challenge", desc:"120+ students logged a full day without personal devices — highlights and photos coming soon." },
+      { date:"MAR\n2026", tag:"event", tagLabel:"Event", title:"Screen-Free Saturday Challenge", desc:"120+ students logged a full day without personal devices highlights and photos coming soon." },
       { date:"FEB\n2026", tag:"partnership", tagLabel:"Partnership", title:"New school joins the network", desc:"A third partner school signed on to run the Shomonnoy club curriculum this term." },
       { date:"FEB\n2026", tag:"milestone", tagLabel:"Milestone", title:"500 students reached", desc:"Across three schools, Shomonnoy workshops have now reached over 500 Grade 6–7 students." },
       { date:"JAN\n2026", tag:"event", tagLabel:"Event", title:"Guidebook launch workshop", desc:"Students received their first print copies of the Shomonnoy guidebook in a hands-on session." },
@@ -104,11 +104,11 @@ window.I18N_EN = {
     intro: "Photos and moments from schools, partners, and volunteers building the balance movement together.",
     items: [
       { cat:"Workshop", title:"Digital Wellbeing 101 session", icon:"presentation", grad:"linear-gradient(135deg, var(--blue), var(--blue-dark))" },
-      { cat:"Campaign", title:"Screen-Free Saturday photo wall", icon:"camera", grad:"linear-gradient(135deg, var(--mint), var(--teal-ink))" },
-      { cat:"Partnership", title:"MoU signing with partner school", icon:"handshake", grad:"linear-gradient(135deg, var(--orange), var(--orange-press))" },
-      { cat:"Workshop", title:"Hobby swap-meet afternoon", icon:"paintbrush", grad:"linear-gradient(135deg, var(--blue), var(--mint))" },
-      { cat:"Campaign", title:"Balance Pledge wall", icon:"heart-handshake", grad:"linear-gradient(135deg, var(--mint), var(--blue))" },
-      { cat:"Workshop", title:"Storytelling without screens", icon:"book-open", grad:"linear-gradient(135deg, var(--orange), var(--blue))" }
+      { cat:"Campaign", title:"Awareness campaign - in the community", icon:"camera", grad:"linear-gradient(135deg, var(--mint), var(--teal-ink))" },
+      { cat:"Partnership", title:"MoU signing with partners", icon:"handshake", grad:"linear-gradient(135deg, var(--orange), var(--orange-press))" },
+      { cat:"Workshop", title:"Vibe coding training", icon:"paintbrush", grad:"linear-gradient(135deg, var(--blue), var(--mint))" },
+      { cat:"Campaign", title:"Student magazine", icon:"heart-handshake", grad:"linear-gradient(135deg, var(--mint), var(--blue))" },
+      { cat:"Workshop", title:"Leadership - RFZ Digital Welfare Club", icon:"book-open", grad:"linear-gradient(135deg, var(--orange), var(--blue))" }
       // Add future gallery items here, following the same shape.
     ]
   },
@@ -116,7 +116,7 @@ window.I18N_EN = {
   ebooks: {
     eyebrow: "E-Book Resource Center",
     heading: "Guidebooks & downloadable resources",
-    intro: "Free materials for students, parents, and teachers — more titles are added here as they're published.",
+    intro: "Free materials for students, parents, and teachers more titles are added here as they're published.",
     downloadLabel: "Download",
     items: [
       { title:"The Shomonnoy Guidebook", desc:"A grade 6–7 companion guide for building balanced digital habits.", size:"4.2 MB · PDF", icon:"book-marked", grad:"linear-gradient(160deg, var(--blue), var(--blue-dark))" },
@@ -147,10 +147,10 @@ window.I18N_EN = {
     heading: "Let's build the balance together",
     partnerBox: {
       title: "Partner with Shomonnoy",
-      text: "Schools, NGOs, and donors are welcome to collaborate — from hosting a workshop to sponsoring the next guidebook print run.",
+      text: "Schools, NGOs, and donors are welcome to collaborate from hosting a workshop to sponsoring the next guidebook print run.",
       cta: "Start a Conversation"
     },
-    socialPrompt: "Prefer social media? Find us here — links are placeholders, ready to connect.",
+    socialPrompt: "Prefer social media? Find us here links are placeholders, ready to connect.",
     qrTitle: "Visit patiHash",
     qrDesc: "Scan to check patiHash",
     social: {
@@ -175,7 +175,7 @@ window.I18N_EN = {
       },
       message: { label: "Message", placeholder: "Tell us how you'd like to get involved..." },
       submit: "Send Message",
-      note: "This form is a front-end placeholder — connect it to your email service or backend of choice to receive submissions.",
+      note: "This form is a front-end placeholder connect it to your email service or backend of choice to receive submissions.",
       success: "Thanks! Your message has been noted."
     }
   },
