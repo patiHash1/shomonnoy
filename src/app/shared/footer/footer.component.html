@@ -1,0 +1,21 @@
+<footer>
+  <div class="container">
+    <div class="footer-bottom">
+      <div class="footer-credit-line">
+        <span [innerHTML]="translateService.t('footer.copyrightHtml')"></span>
+        <a
+          href="https://www.patihash.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="patiHash"
+          class="credit-logo-link"
+        ><img
+            src="assets/patiHash_logo.jpg"
+            alt="patiHash"
+            class="credit-logo credit-logo--round"
+          /></a>
+      </div>
+      <span>{{ translateService.t('footer.tagline') }}</span>
+    </div>
+  </div>
+</footer>

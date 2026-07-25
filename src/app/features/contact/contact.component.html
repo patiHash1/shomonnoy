@@ -1,0 +1,176 @@
+<section id="contact">
+  <div class="container contact-grid">
+    <div class="reveal">
+      <div class="eyebrow">
+        {{ translate.t('contact.eyebrow') }}
+      </div>
+      <h2 style="font-size: clamp(1.8rem, 3vw, 2.4rem); margin-bottom: 20px">
+        {{ translate.t('contact.heading') }}
+      </h2>
+      <div class="partner-box">
+        <h3>{{ translate.t('contact.partnerBox.title') }}</h3>
+        <p>
+          {{ translate.t('contact.partnerBox.text') }}
+        </p>
+        <a href="#contactForm" class="btn btn-primary">
+          <i data-lucide="arrow-down"></i>
+          <span>{{ translate.t('contact.partnerBox.cta') }}</span>
+        </a>
+      </div>
+      <p style="color: var(--ink-soft); font-size: 0.95rem">
+        {{ translate.t('contact.socialPrompt') }}
+      </p>
+      <div class="social-row">
+        <a
+          href="https://www.facebook.com/patihash.creative.2024"
+          target="_blank"
+          rel="noopener noreferrer"
+          [attr.aria-label]="translate.t('contact.social.facebook')"
+        >
+          <i data-lucide="facebook"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/patihash.creative/"
+          target="_blank"
+          rel="noopener noreferrer"
+          [attr.aria-label]="translate.t('contact.social.instagram')"
+        >
+          <i data-lucide="instagram"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/company/patihash"
+          target="_blank"
+          rel="noopener noreferrer"
+          [attr.aria-label]="translate.t('contact.social.linkedin')"
+        >
+          <i data-lucide="linkedin"></i>
+        </a>
+        <a
+          href="#"
+          [attr.aria-label]="translate.t('contact.social.email')"
+        >
+          <i data-lucide="mail"></i>
+        </a>
+      </div>
+      <div
+        class="contact-qr-wrap"
+        style="
+          margin-top: 24px;
+          display: flex;
+          align-items: center;
+          gap: 16px;
+        "
+      >
+        <a
+          href="https://www.patihash.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="contact-qr-card"
+          aria-label="Visit patiHash.com"
+          style="
+            padding: 8px;
+            border-radius: 12px;
+            background: var(--white);
+            border: 1.5px solid var(--line);
+            display: inline-block;
+            width: 104px;
+            height: 104px;
+            box-shadow: var(--shadow-soft);
+            transition:
+              transform 0.25s var(--ease),
+              box-shadow 0.25s var(--ease);
+            flex-shrink: 0;
+          "
+        >
+          <img
+            src="assets/patihash-qr.png"
+            alt="QR code linking to patiHash.com"
+            style="width: 86px; height: 86px; display: block"
+          />
+        </a>
+        <div>
+          <span
+            style="
+              display: block;
+              font-family: var(--body);
+              font-weight: 700;
+              color: var(--navy);
+              font-size: 1rem;
+              margin-bottom: 2px;
+            "
+            >{{ translate.t('contact.qrTitle') }}</span
+          >
+          <span
+            style="
+              display: block;
+              font-family: var(--body);
+              color: var(--ink-soft);
+              font-size: 0.85rem;
+            "
+            >{{ translate.t('contact.qrDesc') }}</span
+          >
+        </div>
+      </div>
+    </div>
+
+    <form class="form-card reveal" (submit)="onSubmit()" id="contactForm">
+      <div class="field">
+        <label for="fullName">{{ translate.t('contact.form.fullName.label') }}</label>
+        <input
+          type="text"
+          id="fullName"
+          name="fullName"
+          [placeholder]="translate.t('contact.form.fullName.placeholder')"
+          [(ngModel)]="fullName"
+          required
+        />
+      </div>
+      <div class="field">
+        <label for="email">{{ translate.t('contact.form.email.label') }}</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          [placeholder]="translate.t('contact.form.email.placeholder')"
+          [(ngModel)]="email"
+          required
+        />
+      </div>
+      <div class="field">
+        <label for="role">{{ translate.t('contact.form.role.label') }}</label>
+        <select id="role" name="role" [(ngModel)]="selectedRole">
+          @for (key of roleOptionsKeys; track key) {
+            <option [value]="key">
+              {{ getRoleLabel(key) }}
+            </option>
+          }
+        </select>
+      </div>
+      <div class="field">
+        <label for="message">{{ translate.t('contact.form.message.label') }}</label>
+        <textarea
+          id="message"
+          name="message"
+          [placeholder]="translate.t('contact.form.message.placeholder')"
+          [(ngModel)]="message"
+          required
+        ></textarea>
+      </div>
+      <button
+        type="submit"
+        class="btn btn-primary"
+        style="width: 100%; justify-content: center"
+      >
+        <i data-lucide="send"></i>
+        <span>{{ translate.t('contact.form.submit') }}</span>
+      </button>
+      <p class="form-note">
+        {{ translate.t('contact.form.note') }}
+      </p>
+      <div class="form-success" [class.show]="showSuccess()" id="formSuccess">
+        <i data-lucide="check-circle"></i>
+        <span>{{ translate.t('contact.form.success') }}</span>
+      </div>
+    </form>
+  </div>
+</section>

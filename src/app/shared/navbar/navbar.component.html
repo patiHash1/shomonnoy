@@ -1,0 +1,75 @@
+<nav class="nav" id="nav" [class.scrolled]="scrollService.isScrolled()">
+  <div class="container nav-inner">
+    <a href="#home" (click)="navigateToSection('home', $event)" class="brand">
+      <img
+        src="assets/project_shmonnoy.jpg"
+        class="brand-mark"
+        alt="Project Shomonnoy logo"
+      />
+      <span>{{ translateService.t('nav.brand') }}</span>
+    </a>
+
+    <ul class="nav-links" id="navLinks" [class.open]="isMenuOpen()">
+      <li>
+        <a href="#about" (click)="navigateToSection('about', $event)" class="nav-link-item" [class.active]="scrollService.activeSection() === 'about'">
+          {{ translateService.t('nav.links.about') }}
+        </a>
+      </li>
+      <li>
+        <a href="#vision" (click)="navigateToSection('vision', $event)" class="nav-link-item" [class.active]="scrollService.activeSection() === 'vision'">
+          {{ translateService.t('nav.links.vision') }}
+        </a>
+      </li>
+      <li>
+        <a href="#updates" (click)="navigateToSection('updates', $event)" class="nav-link-item" [class.active]="scrollService.activeSection() === 'updates'">
+          {{ translateService.t('nav.links.updates') }}
+        </a>
+      </li>
+      <li>
+        <a href="#network" (click)="navigateToSection('network', $event)" class="nav-link-item" [class.active]="scrollService.activeSection() === 'network'">
+          {{ translateService.t('nav.links.network') }}
+        </a>
+      </li>
+      <li>
+        <a href="#ebooks" (click)="navigateToSection('ebooks', $event)" class="nav-link-item" [class.active]="scrollService.activeSection() === 'ebooks'">
+          {{ translateService.t('nav.links.ebooks') }}
+        </a>
+      </li>
+      <li>
+        <a href="#messages" (click)="navigateToSection('messages', $event)" class="nav-link-item" [class.active]="scrollService.activeSection() === 'messages'">
+          {{ translateService.t('nav.links.messages') }}
+        </a>
+      </li>
+      <li>
+        <a href="#contact" (click)="navigateToSection('contact', $event)" class="nav-cta">
+          {{ translateService.t('nav.cta') }}
+        </a>
+      </li>
+      <li class="lang-switch-wrap">
+        <button
+          (click)="switchLanguage(translateService.currentLanguage() === 'en' ? 'bn' : 'en')"
+          class="lang-toggle-btn"
+          [attr.aria-label]="translateService.t('nav.hamburgerLabel')"
+        >
+          <span class="lang-option" [class.active]="translateService.currentLanguage() === 'en'" id="langEN">EN</span>
+          <span class="lang-divider">/</span>
+          <span class="lang-option" [class.active]="translateService.currentLanguage() === 'bn'" id="langBN">বাংলা</span>
+        </button>
+      </li>
+      <li class="theme-switch-wrap">
+        <app-theme-toggle></app-theme-toggle>
+      </li>
+    </ul>
+
+    <button
+      class="hamburger"
+      id="hamburger"
+      (click)="toggleMenu()"
+      [class.open]="isMenuOpen()"
+      [attr.aria-label]="translateService.t('nav.hamburgerLabel')"
+      [attr.aria-expanded]="isMenuOpen()"
+    >
+      <span></span>
+    </button>
+  </div>
+</nav>

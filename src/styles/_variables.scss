@@ -1,0 +1,121 @@
+// Typography and Transitions variables
+$font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+$font-display: 'Baloo 2', system-ui, sans-serif;
+$font-mono: 'Space Mono', monospace;
+$font-bengali: 'Noto Sans Bengali', system-ui, sans-serif;
+$transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+$transition-bounce: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+// Breakpoints
+$breakpoint-sm: 640px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1280px;
+
+:root {
+  --radius-xl: 40px;
+  --radius-lg: 28px;
+  --radius-md: 18px;
+  --radius-sm: 12px;
+  --display: 'Baloo 2', system-ui, sans-serif;
+  --body: 'Inter', system-ui, sans-serif;
+  --mono: 'Space Mono', monospace;
+  --bengali: 'Noto Sans Bengali', system-ui, sans-serif;
+  --ease: cubic-bezier(.22,.9,.32,1);
+
+  /* Constants (independent of light/dark mode) */
+  --white-const: #FFFFFF;
+  --navy-const: #0F2854;
+
+  /* Brand palette */
+  --blue: #4988C4;
+  --blue-dark: #1C4D8D;
+  --blue-tint: #BDE8F5;
+  --mint: #4988C4;
+  --mint-tint: #DDF2F8;
+  --orange: #1C4D8D;
+  --orange-tint: #BDE8F5;
+  --navy: #0F2854;
+  --ink: #192A47;
+  --ink-soft: #4E658C;
+  --paper: #FBFCFE;
+  --mist: #F1F7F9;
+  --white: #FFFFFF;
+
+  /* Surfaces & elevation */
+  --line: rgba(15, 40, 84, 0.09);
+  --glass: rgba(189, 232, 245, 0.75);
+  --glass-border: rgba(73, 136, 196, 0.4);
+  --shadow-soft: 0 10px 30px rgba(15, 40, 84, 0.08);
+  --shadow-lift: 0 20px 45px rgba(15, 40, 84, 0.14);
+  --shadow-menu: -20px 0 50px rgba(0, 0, 0, 0.12);
+  --value-card-bg: rgba(255, 255, 255, 0.75);
+  --footer-bg: var(--navy);
+
+  /* Text-on-tint accents (used over orange-tint / mint-tint backgrounds) */
+  --amber-ink: #0F2854;
+  --teal-ink: #1C4D8D;
+
+  /* Button glow accents (ambient hover/focus glow, no offset) */
+  --orange-glow: rgba(28, 77, 141, 0.35);
+  --orange-glow-strong: rgba(28, 77, 141, 0.45);
+  --blue-glow: rgba(73, 136, 196, 0.35);
+  --blue-glow-strong: rgba(73, 136, 196, 0.45);
+  --mint-glow: rgba(73, 136, 196, 0.35);
+  --mint-glow-strong: rgba(73, 136, 196, 0.45);
+
+  /* Button "press" base — a darker shade of each button color, used as
+     the 3D pressed-edge beneath the button face */
+  --orange-press: #0F2854;
+  --neutral-press: #B8CBD8;
+
+  /* White at reduced opacity, for text/borders on dark backgrounds */
+  --white-90: rgba(255, 255, 255, 0.9);
+  --white-88: rgba(255, 255, 255, 0.88);
+  --white-85: rgba(255, 255, 255, 0.85);
+  --white-75: rgba(255, 255, 255, 0.75);
+  --white-40: rgba(255, 255, 255, 0.4);
+  --white-12: rgba(255, 255, 255, 0.12);
+}
+
+[data-theme="dark"] {
+  /* Brand palette overrides */
+  --blue: #60A5FA;
+  --blue-dark: #3B82F6;
+  --blue-tint: rgba(96, 165, 250, 0.15);
+  --mint: #34D399;
+  --mint-tint: rgba(52, 211, 153, 0.15);
+  --orange: #FB923C;
+  --orange-tint: rgba(251, 146, 60, 0.15);
+  --navy: #F8FAFC;
+  --ink: #E2E8F0;
+  --ink-soft: #94A3B8;
+  --paper: #070D19;
+  --mist: #0E1A30;
+  --white: #0F1E36;
+
+  /* Surfaces & elevation overrides */
+  --line: rgba(255, 255, 255, 0.08);
+  --glass: rgba(7, 13, 25, 0.8);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.4);
+  --shadow-lift: 0 20px 45px rgba(0, 0, 0, 0.6);
+  --value-card-bg: rgba(15, 30, 54, 0.55);
+  --footer-bg: #040810;
+
+  /* Text-on-tint accents */
+  --amber-ink: #FB923C;
+  --teal-ink: #34D399;
+
+  /* Button glows */
+  --orange-glow: rgba(251, 146, 60, 0.25);
+  --orange-glow-strong: rgba(251, 146, 60, 0.35);
+  --blue-glow: rgba(96, 165, 250, 0.25);
+  --blue-glow-strong: rgba(96, 165, 250, 0.35);
+  --mint-glow: rgba(52, 211, 153, 0.25);
+  --mint-glow-strong: rgba(52, 211, 153, 0.35);
+
+  /* Button "press" bases */
+  --orange-press: #C2410C;
+  --neutral-press: #1E2D4A;
+}

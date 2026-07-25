@@ -1,0 +1,26 @@
+<section id="messages" class="section-alt">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">{{ translate.t('messages.eyebrow') }}</div>
+      <h2>{{ translate.t('messages.heading') }}</h2>
+    </div>
+    <div class="messages-grid reveal" id="messagesGrid">
+      @for (m of translate.translations().messages.quotes || []; track m.name) {
+        <div class="message-card">
+          <i class="quote-mark" data-lucide="quote"></i>
+          <p class="quote" [class.lang-bn]="m.lang === 'bn'">{{ m.quote }}</p>
+          @if (m.translation) {
+            <p class="quote-translation">{{ m.translation }}</p>
+          }
+          <div class="message-person">
+            <div class="avatar" [style.background]="m.avatarColor">{{ m.initials }}</div>
+            <div>
+              <b>{{ m.name }}</b>
+              <span>{{ m.role }}</span>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

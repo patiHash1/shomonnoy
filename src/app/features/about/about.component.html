@@ -1,0 +1,231 @@
+<section id="about">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">{{ translate.t('about.eyebrow') }}</div>
+      <h2>{{ translate.t('about.heading') }}</h2>
+      <p>{{ translate.t('about.intro') }}</p>
+    </div>
+    <div class="about-grid">
+      <div class="about-visual reveal">
+        <svg
+          viewBox="0 0 400 300"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <!-- Background decorative shapes -->
+          <circle cx="200" cy="150" r="130" fill="rgba(255,255,255,0.12)" />
+          <circle cx="200" cy="150" r="90" fill="rgba(255,255,255,0.15)" />
+
+          <!-- Tablet / Screen (left side) -->
+          <rect
+            x="50"
+            y="90"
+            width="110"
+            height="150"
+            rx="16"
+            fill="#142338"
+            stroke="rgba(255,255,255,0.25)"
+            stroke-width="3"
+          />
+          <rect
+            x="60"
+            y="105"
+            width="90"
+            height="110"
+            rx="6"
+            fill="#E7F1FA"
+          />
+          <circle cx="105" cy="228" r="5" fill="#FFFFFF" opacity="0.8" />
+
+          <!-- Screen sleep face -->
+          <g class="svg-playground-screen-sleep">
+            <path
+              d="M92 155 Q97 160 102 155"
+              stroke="#55677C"
+              stroke-width="3.5"
+              stroke-linecap="round"
+              fill="none"
+            />
+            <path
+              d="M108 155 Q113 160 118 155"
+              stroke="#55677C"
+              stroke-width="3.5"
+              stroke-linecap="round"
+              fill="none"
+            />
+            <text
+              x="124"
+              y="142"
+              fill="#55677C"
+              font-family="monospace"
+              font-size="12"
+              font-weight="bold"
+            >
+              Zzz
+            </text>
+          </g>
+
+          <!-- Screen happy face (active on hover) -->
+          <g class="svg-playground-screen-happy">
+            <circle cx="95" cy="150" r="5.5" fill="#3B82C4" />
+            <circle cx="115" cy="150" r="5.5" fill="#3B82C4" />
+            <path
+              d="M97 164 Q105 174 113 164"
+              stroke="#3B82C4"
+              stroke-width="3.5"
+              stroke-linecap="round"
+              fill="none"
+            />
+            <path
+              d="M84 140 C88 136, 122 136, 126 140"
+              stroke="#F4A340"
+              stroke-width="3.5"
+              stroke-linecap="round"
+              fill="none"
+            />
+          </g>
+
+          <!-- Playground tree (right side) -->
+          <path d="M292 240 L308 240 L304 180 L296 180 Z" fill="#9A5B0E" />
+          <g class="svg-playground-leaves">
+            <circle cx="280" cy="155" r="34" fill="#45B996" />
+            <circle cx="320" cy="155" r="34" fill="#45B996" />
+            <circle
+              cx="300"
+              cy="125"
+              r="38"
+              fill="#E1F5EE"
+              opacity="0.85"
+            />
+            <circle cx="300" cy="135" r="34" fill="#45B996" />
+            <circle cx="276" cy="152" r="5" fill="#F4A340" />
+            <circle cx="316" cy="162" r="5" fill="#F4A340" />
+            <circle cx="296" cy="132" r="5" fill="#3B82C4" />
+          </g>
+
+          <!-- Flying Paper Plane -->
+          <g class="svg-playground-plane">
+            <path
+              d="M10 0 L40 18 L15 24 Z"
+              fill="#FFFFFF"
+              stroke="#245A85"
+              stroke-width="2"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M15 24 L24 20 L40 18 Z"
+              fill="#E7F1FA"
+              stroke="#245A85"
+              stroke-width="1.5"
+              stroke-linejoin="round"
+            />
+          </g>
+
+          <!-- Bouncing Soccer Ball -->
+          <g class="svg-playground-ball">
+            <circle
+              cx="180"
+              cy="240"
+              r="16"
+              fill="#FFFFFF"
+              stroke="#142338"
+              stroke-width="2.5"
+            />
+            <path
+              d="M172 230 L180 236 L188 230"
+              stroke="#142338"
+              stroke-width="2"
+              fill="none"
+            />
+            <path
+              d="M166 242 L176 242 L180 252 L170 254 Z"
+              fill="#142338"
+            />
+            <path
+              d="M194 242 L184 242 L180 252 L190 254 Z"
+              fill="#142338"
+            />
+            <path d="M180 224 L180 236" stroke="#142338" stroke-width="2" />
+          </g>
+
+          <!-- Paintbrush -->
+          <g class="svg-playground-brush">
+            <line
+              x1="280"
+              y1="130"
+              x2="230"
+              y2="180"
+              stroke="#C97A1E"
+              stroke-width="4.5"
+              stroke-linecap="round"
+            />
+            <rect
+              x="274"
+              y="126"
+              width="6"
+              height="8"
+              fill="#B9C6D6"
+              transform="rotate(-45 277 130)"
+            />
+            <path
+              d="M278 122 Q286 112 284 108 Q280 110 274 118 Z"
+              fill="#3B82C4"
+            />
+            <path
+              d="M230 190 Q200 205 160 190"
+              stroke="#3B82C4"
+              stroke-width="5.5"
+              stroke-linecap="round"
+              fill="none"
+              opacity="0.6"
+            />
+          </g>
+
+          <!-- Sparkles -->
+          <g class="svg-playground-stars">
+            <path
+              d="M200 70 L202 76 L208 77 L203 81 L205 87 L200 84 L195 87 L197 81 L192 77 L198 76 Z"
+              fill="#F4A340"
+            />
+            <path
+              d="M240 50 L241.5 54.5 L246 55 L242.5 58 L244 62.5 L240 60.5 L236 62.5 L237.5 58 L234 55 L238.5 54.5 Z"
+              fill="#3B82C4"
+            />
+          </g>
+        </svg>
+      </div>
+      <div>
+        <div class="about-card reveal">
+          <h3>
+            <i data-lucide="flag"></i>
+            <span>{{ translate.t('about.cards.background.title') }}</span>
+          </h3>
+          <p>{{ translate.t('about.cards.background.text') }}</p>
+        </div>
+        <div class="about-card reveal">
+          <h3>
+            <i data-lucide="alert-triangle"></i>
+            <span>{{ translate.t('about.cards.problem.title') }}</span>
+          </h3>
+          <p>{{ translate.t('about.cards.problem.text') }}</p>
+        </div>
+        <div class="about-card reveal">
+          <h3>
+            <i data-lucide="sparkles"></i>
+            <span>{{ translate.t('about.cards.whyItMatters.title') }}</span>
+          </h3>
+          <p>{{ translate.t('about.cards.whyItMatters.text') }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="balance-divider">
+  <div class="line"></div>
+  <i
+    data-lucide="scale"
+    style="width: 18px; height: 18px; color: var(--ink-soft)"
+  ></i>
+  <div class="line"></div>
+</div>

@@ -1,0 +1,41 @@
+<section id="updates">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">{{ translate.t('updates.eyebrow') }}</div>
+      <h2>{{ translate.t('updates.heading') }}</h2>
+      <p>{{ translate.t('updates.intro') }}</p>
+    </div>
+    <div class="updates-feed" id="updatesFeed">
+      @for (item of visibleUpdates(); track item.title) {
+        <article class="update-card">
+          <div class="update-date">{{ item.date }}</div>
+          <div>
+            <span class="update-tag" [class]="'tag-' + item.tag">{{ item.tagLabel }}</span>
+            <h4>{{ item.title }}</h4>
+            @if (item.desc) {
+              <p>{{ item.desc }}</p>
+            }
+          </div>
+          <i data-lucide="arrow-right" class="update-arrow"></i>
+        </article>
+      }
+    </div>
+    @if (hasMore()) {
+      <div class="load-more-wrap">
+        <button (click)="loadMore()" class="btn btn-outline" id="loadMoreBtn">
+          <i data-lucide="rotate-cw"></i>
+          <span>{{ translate.t('updates.loadMore') }}</span>
+        </button>
+      </div>
+    }
+  </div>
+</section>
+
+<div class="balance-divider">
+  <div class="line"></div>
+  <i
+    data-lucide="scale"
+    style="width: 18px; height: 18px; color: var(--ink-soft)"
+  ></i>
+  <div class="line"></div>
+</div>

@@ -1,0 +1,117 @@
+<section id="ebooks">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">
+        {{ translate.t('ebooks.eyebrow') }}
+      </div>
+      <h2>
+        {{ translate.t('ebooks.heading') }}
+      </h2>
+      <p>
+        {{ translate.t('ebooks.intro') }}
+      </p>
+    </div>
+    <div class="resource-grid" id="resourceGrid">
+      @for (r of translate.translations().ebooks.items || []; track r.title; let idx = $index) {
+        <div class="resource-card">
+          <div class="resource-thumb" [style.background]="r.grad">
+            <div class="resource-anim">
+              @if (idx === 0) {
+                <!-- Guidebook: openable book with sparkles -->
+                <svg class="resource-svg-guide" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="25" y="22" width="68" height="84" rx="6" fill="#D2E2F0" transform="rotate(-3 59 64)" />
+                  <rect x="23" y="20" width="70" height="86" rx="6" fill="#EBF3FA" transform="rotate(2 58 63)" />
+                  <rect x="20" y="16" width="72" height="88" rx="6" fill="#FFFFFF" stroke="#245A85" stroke-width="2.5" />
+                  <line x1="28" y1="32" x2="84" y2="32" stroke="#B2CEE6" stroke-width="3" stroke-linecap="round" />
+                  <line x1="28" y1="44" x2="74" y2="44" stroke="#B2CEE6" stroke-width="3" stroke-linecap="round" />
+                  <line x1="28" y1="56" x2="80" y2="56" stroke="#B2CEE6" stroke-width="3" stroke-linecap="round" />
+                  <line x1="28" y1="68" x2="68" y2="68" stroke="#B2CEE6" stroke-width="3" stroke-linecap="round" />
+                  <g class="svg-guide-cover">
+                    <rect x="16" y="14" width="74" height="92" rx="7" fill="#3B82C4" stroke="#245A85" stroke-width="2.5" />
+                    <rect x="24" y="24" width="58" height="72" rx="4" fill="#245A85" />
+                    <path d="M42 50 L53 61 L74 40" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+                    <line x1="20" y1="20" x2="20" y2="100" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" />
+                  </g>
+                  <path d="M72 14 L82 14 L82 38 L77 33 L72 38 Z" fill="#F4A340" />
+                  <g class="svg-guide-sparkle">
+                    <path d="M102 24 L105 27 L102 30 L99 27 Z" fill="#F4A340" />
+                    <path d="M88 12 L90 14 L88 16 L86 14 Z" fill="#45B996" />
+                  </g>
+                </svg>
+              } @else if (idx === 1) {
+                <!-- Parent Quick Reference: Clock & conversation bubbles -->
+                <svg class="resource-svg-parent" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="60" cy="68" r="32" fill="#E1F5EE" stroke="#1F7A5C" stroke-width="3" />
+                  <line x1="60" y1="40" x2="60" y2="44" stroke="#1F7A5C" stroke-width="2.5" stroke-linecap="round" />
+                  <line x1="60" y1="92" x2="60" y2="96" stroke="#1F7A5C" stroke-width="2.5" stroke-linecap="round" />
+                  <line x1="32" y1="68" x2="36" y2="68" stroke="#1F7A5C" stroke-width="2.5" stroke-linecap="round" />
+                  <line x1="84" y1="68" x2="88" y2="68" stroke="#1F7A5C" stroke-width="2.5" stroke-linecap="round" />
+                  <g class="svg-parent-hand">
+                    <line x1="60" y1="68" x2="60" y2="48" stroke="#142338" stroke-width="3" stroke-linecap="round" />
+                    <line x1="60" y1="68" x2="74" y2="68" stroke="#142338" stroke-width="3" stroke-linecap="round" />
+                    <circle cx="60" cy="68" r="4" fill="#142338" />
+                  </g>
+                  <g class="svg-parent-bubble1">
+                    <rect x="18" y="16" width="34" height="22" rx="6" fill="#FDEEDA" stroke="#F4A340" stroke-width="2" />
+                    <path d="M26 38 L30 43 L32 38 Z" fill="#FDEEDA" stroke="#F4A340" stroke-width="2" />
+                    <path d="M27 37 L30 41 L32 37 Z" fill="#FDEEDA" />
+                    <line x1="24" y1="23" x2="46" y2="23" stroke="#9A5B0E" stroke-width="2" stroke-linecap="round" />
+                    <line x1="24" y1="29" x2="38" y2="29" stroke="#9A5B0E" stroke-width="2" stroke-linecap="round" />
+                  </g>
+                  <g class="svg-parent-bubble2">
+                    <rect x="68" y="12" width="34" height="22" rx="6" fill="#E7F1FA" stroke="#3B82C4" stroke-width="2" />
+                    <path d="M94 34 L90 39 L88 34 Z" fill="#E7F1FA" stroke="#3B82C4" stroke-width="2" />
+                    <path d="M93 33 L90 37 L88 33 Z" fill="#E7F1FA" />
+                    <line x1="74" y1="19" x2="96" y2="19" stroke="#245A85" stroke-width="2" stroke-linecap="round" />
+                    <line x1="74" y1="25" x2="88" y2="25" stroke="#245A85" stroke-width="2" stroke-linecap="round" />
+                  </g>
+                  <path d="M60 74 C58 72 55 70 55 67 C55 65.5 56.5 64 58.5 64 C59.7 64 60.5 65 60 66 C59.5 65 60.3 64 61.5 64 C63.5 64 65 65.5 65 67 C65 70 62 72 60 74 Z" fill="#45B996" />
+                </svg>
+              } @else {
+                <!-- Activity Pack: clipboard with sliding shapes and checklist -->
+                <svg class="resource-svg-activity" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="22" y="18" width="76" height="92" rx="8" fill="#FDEEDA" stroke="#F4A340" stroke-width="3" />
+                  <rect x="30" y="28" width="60" height="74" rx="4" fill="#FFFFFF" stroke="#B9C6D6" stroke-width="1.5" />
+                  <rect x="46" y="10" width="28" height="12" rx="3" fill="#B9C6D6" stroke="#223349" stroke-width="2" />
+                  <circle cx="60" cy="16" r="3" fill="#223349" />
+                  <circle cx="42" cy="46" r="6" fill="#E1F5EE" stroke="#45B996" stroke-width="1.5" />
+                  <path class="svg-activity-check1" d="M39 46 L41 48 L46 43" stroke="#1F7A5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <line x1="54" y1="46" x2="82" y2="46" stroke="#223349" stroke-width="2" stroke-linecap="round" />
+                  <circle cx="42" cy="62" r="6" fill="#E1F5EE" stroke="#45B996" stroke-width="1.5" />
+                  <path class="svg-activity-check2" d="M39 62 L41 64 L46 59" stroke="#1F7A5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <line x1="54" y1="62" x2="82" y2="62" stroke="#223349" stroke-width="2" stroke-linecap="round" />
+                  <g class="svg-activity-piece1">
+                    <rect x="32" y="80" width="16" height="16" rx="3" fill="#3B82C4" />
+                    <circle cx="40" cy="80" r="3" fill="#3B82C4" />
+                  </g>
+                  <g class="svg-activity-piece2">
+                    <rect x="68" y="78" width="16" height="16" rx="3" fill="#45B996" />
+                    <circle cx="68" cy="86" r="3" fill="#45B996" />
+                  </g>
+                  <path d="M 96 36 L 98 42 L 104 43 L 99 47 L 101 53 L 96 50 L 91 53 L 93 47 L 88 43 L 94 42 Z" fill="#F4A340" />
+                </svg>
+              }
+              <div class="resource-anim-badge"><i [attr.data-lucide]="r.icon"></i></div>
+            </div>
+          </div>
+          <h4>{{ r.title }}</h4>
+          <p>{{ r.desc }}</p>
+          <div class="resource-meta"><span>{{ r.size }}</span></div>
+          <a href="#" class="resource-download" download>
+            <i data-lucide="download"></i>
+            {{ translate.translations().ebooks.downloadLabel || 'Download' }}
+          </a>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<div class="balance-divider">
+  <div class="line"></div>
+  <i
+    data-lucide="scale"
+    style="width: 18px; height: 18px; color: var(--ink-soft)"
+  ></i>
+  <div class="line"></div>
+</div>

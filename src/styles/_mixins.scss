@@ -1,0 +1,29 @@
+@import 'variables';
+
+@mixin glass() {
+  background: var(--glass);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+}
+
+@mixin glass-card() {
+  background: var(--value-card-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-soft);
+  transition: var(--ease);
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lift);
+  }
+}
+
+@mixin responsive($limit) {
+  @media (max-width: $limit) {
+    @content;
+  }
+}
