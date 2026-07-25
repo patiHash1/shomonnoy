@@ -105,7 +105,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .nav-links a:hover::after, .nav-links a:focus-visible::after{width:100%;}
 .nav-links a.nav-cta{
   display: inline-block;
-  background: var(--orange); color: var(--white); padding: 10px 24px; border-radius: 999px;
+  background: var(--orange); color: var(--white-const); padding: 10px 24px; border-radius: 999px;
   font-weight: 700; font-size: 0.9rem; border: none; transform: translateY(0);
   box-shadow: 0 4px 0 var(--orange-press), var(--shadow-soft);
   transition: transform .15s var(--ease), box-shadow .15s var(--ease), background-color 0.15s var(--ease), color 0.15s var(--ease);
@@ -117,12 +117,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   transform: translateY(-2px) scale(1.03); 
   box-shadow: 0 6px 0 var(--orange-press), 0 8px 16px var(--orange-glow);
   background: linear-gradient(135deg, var(--blue) 0%, var(--blue-dark) 100%);
-  color: var(--white);
+  color: var(--white-const);
 }
 .nav-links a.nav-cta:active{
   transform: translateY(2px) scale(0.98);
   box-shadow: 0 1px 0 var(--orange-press);
-  color: var(--white);
+  color: var(--white-const);
 }
 .hamburger{
   display:none; width:42px; height:42px; border:none; background:transparent;
@@ -185,7 +185,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
    own color simulates a stacked layer beneath the face; the button steps
    down into it on press instead of just lifting on hover. */
 .btn-primary{
-  background: var(--orange); color: var(--white);
+  background: var(--orange); color: var(--white-const);
   box-shadow: 0 5px 0 var(--orange-press), var(--shadow-soft);
   transition: transform 0.2s var(--ease), box-shadow 0.2s var(--ease), background-color 0.2s var(--ease);
 }
@@ -204,7 +204,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   transition: transform 0.2s var(--ease), box-shadow 0.2s var(--ease), background-color 0.2s var(--ease), color 0.2s var(--ease);
 }
 .btn-outline:hover{
-  background: var(--blue-dark); color: var(--white);
+  background: var(--blue-dark); color: var(--white-const);
   transform: translateY(-2px);
   box-shadow: 0 7px 0 var(--neutral-press), 0 8px 20px var(--blue-glow);
 }
@@ -256,7 +256,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
    ========================================================= */
 .section-head{max-width:640px; margin-bottom:48px;}
 .section-head h2{font-size: clamp(1.8rem, 3.2vw, 2.6rem);}
-.section-head p{margin-top:14px; color:var(--ink-soft); font-size:1.05rem;}
+.section-head p{margin-top:14px; color:var(--ink); font-size:1.05rem;}
 .section-alt{background:var(--mist);}
 
 /* =========================================================
@@ -264,7 +264,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
    ========================================================= */
 .about-grid{display:grid; grid-template-columns: 0.9fr 1.1fr; gap:56px; align-items:start;}
 .about-card{
-  background: rgba(255, 255, 255, 0.75); border: 1px solid var(--line); border-top: 4px solid var(--line); border-radius: var(--radius-md);
+  background: var(--value-card-bg); border: 1px solid var(--line); border-top: 4px solid var(--line); border-radius: var(--radius-md);
   padding: 28px; box-shadow: var(--shadow-soft); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
   transition: transform 0.4s var(--ease), box-shadow 0.4s var(--ease), border-color 0.4s var(--ease);
 }
@@ -274,7 +274,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .about-card + .about-card{margin-top:18px;}
 .about-card h3{font-size:1.15rem; display:flex; align-items:center; gap:10px; margin-bottom:8px;}
 .about-card h3 i{width:22px; height:22px;}
-.about-card p{color:var(--ink-soft); font-size:0.98rem;}
+.about-card p{color:var(--ink); font-size:0.98rem;}
 .about-card:nth-child(1){border-top-color:var(--blue);}
 .about-card:nth-child(1) h3 i{color:var(--blue);}
 .about-card:nth-child(2){border-top-color:var(--orange);}
@@ -305,7 +305,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 
 .values-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:20px;}
 .value-card{
-  background: rgba(255, 255, 255, 0.75); border: 1px solid var(--line); border-top: 4px solid var(--line); border-radius: var(--radius-md); padding: 26px 22px;
+  background: var(--value-card-bg); border: 1px solid var(--line); border-top: 4px solid var(--line); border-radius: var(--radius-md); padding: 26px 22px;
   backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
   transition: transform 0.4s var(--ease), box-shadow 0.4s var(--ease), border-color 0.4s var(--ease);
 }
@@ -513,10 +513,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
    ========================================================= */
 .contact-grid{display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:start;}
 .partner-box{
-  background:linear-gradient(160deg, var(--navy), var(--blue-dark));
-  color:var(--white); border-radius:var(--radius-xl); padding:36px; margin-bottom:28px;
+  background:linear-gradient(160deg, var(--navy-const), var(--blue-dark));
+  color:var(--white-const); border-radius:var(--radius-xl); padding:36px; margin-bottom:28px;
 }
-.partner-box h3{color:var(--white); font-size:1.3rem; margin-bottom:10px;}
+.partner-box h3{color:var(--white-const); font-size:1.3rem; margin-bottom:10px;}
 .partner-box p{color:var(--white-85); font-size:0.98rem; margin-bottom:20px;}
 .social-row{display:flex; gap:12px; margin-top:24px;}
 .social-row a{
@@ -547,7 +547,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 /* =========================================================
    FOOTER
    ========================================================= */
-footer{background:var(--navy); color:var(--white-75); padding:48px 0 26px;}
+footer{background:var(--footer-bg); color:var(--white-75); padding:48px 0 26px;}
 .footer-grid{display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:20px; padding-bottom:26px; border-bottom:1px solid var(--white-12);}
 .footer-brand{display:flex; align-items:center; gap:10px; color:var(--white); font-family:var(--display); font-weight:700; font-size:1.1rem;}
 .footer-logo{width:30px; height:30px; border-radius:50%; object-fit:cover; flex-shrink:0; display:block;}
@@ -556,7 +556,7 @@ footer{background:var(--navy); color:var(--white-75); padding:48px 0 26px;}
 .footer-links a:hover{color:var(--white);}
 .footer-qr{display:flex; align-items:center; gap:12px;}
 .footer-qr-card{
-  background:var(--white); border-radius:10px; padding:6px;
+  background:var(--white-const); border-radius:10px; padding:6px;
   display:inline-flex; line-height:0; transform:translateY(0);
   transition: transform .2s ease, box-shadow .2s ease;
 }
@@ -1019,4 +1019,103 @@ html[lang="bn"] h4 {
   transform: translateY(-4px) scale(1.04);
   box-shadow: var(--shadow-lift) !important;
 }
+
+/* =========================================================
+   THEME SWITCHER TOGGLE
+   ========================================================= */
+.theme-switch-wrap {
+  display: inline-flex;
+  align-items: center;
+}
+.theme-toggle-btn {
+  background: var(--white);
+  border: 1px solid var(--line);
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink-soft);
+  box-shadow: var(--shadow-soft);
+  transition: all 0.25s var(--ease);
+  position: relative;
+  padding: 0;
+}
+.theme-toggle-btn:hover {
+  background: var(--blue-tint);
+  border-color: var(--blue);
+  color: var(--blue-dark);
+  transform: scale(1.08) rotate(15deg);
+  box-shadow: 0 4px 12px rgba(59,130,196,0.25);
+}
+.theme-toggle-btn:active {
+  transform: scale(0.95);
+}
+.theme-toggle-btn i {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.4s var(--ease), opacity 0.2s ease;
+}
+
+/* Dynamic icon visibility based on data-theme */
+html[data-theme="dark"] .theme-toggle-btn .sun-icon {
+  display: block;
+  opacity: 1;
+}
+html[data-theme="dark"] .theme-toggle-btn .moon-icon {
+  display: none;
+  opacity: 0;
+}
+html[data-theme="light"] .theme-toggle-btn .sun-icon {
+  display: none;
+  opacity: 0;
+}
+html[data-theme="light"] .theme-toggle-btn .moon-icon {
+  display: block;
+  opacity: 1;
+}
+/* Fallbacks */
+.theme-toggle-btn .sun-icon {
+  display: none;
+}
+.theme-toggle-btn .moon-icon {
+  display: block;
+}
+
+/* Transition background & text color changes smoothly when switching themes */
+body, nav, section, footer, .value-card, .about-card, .vm-card, .update-card, .gallery-card, .resource-card, .message-card, .form-card, input, select, textarea, button {
+  transition: background-color 0.4s ease, border-color 0.4s ease, color 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Mobile responsive styling for theme switcher */
+@media (max-width:880px) {
+  .theme-switch-wrap {
+    margin-top: 10px;
+    width: 100%;
+  }
+  .theme-toggle-btn {
+    width: 100%;
+    border-radius: 999px;
+    padding: 10px;
+    height: auto;
+    justify-content: center;
+    gap: 8px;
+  }
+  .theme-toggle-btn i {
+    margin-right: 2px;
+  }
+  .theme-toggle-btn::after {
+    font-family: var(--body);
+    font-size: 0.82rem;
+    font-weight: 700;
+  }
+  html[data-theme="dark"] .theme-toggle-btn::after {
+    content: "Switch to Light Mode";
+  }
+  html[data-theme="light"] .theme-toggle-btn::after {
+    content: "Switch to Dark Mode";
+  }
+}
+
 

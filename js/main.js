@@ -9,6 +9,18 @@ const savedLang = localStorage.getItem('shomonnoy_lang') || 'en';
 document.documentElement.setAttribute('lang', savedLang);
 window.I18N = (savedLang === 'bn' && window.I18N_BN) ? window.I18N_BN : window.I18N_EN;
 
+// Initialize active visual theme (default: light)
+const savedTheme = localStorage.getItem('shomonnoy_theme') || 'light';
+document.documentElement.setAttribute('data-theme', savedTheme);
+
+// Global Toggle Theme Action
+window.toggleTheme = function() {
+  const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+  const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', newTheme);
+  localStorage.setItem('shomonnoy_theme', newTheme);
+};
+
 function t(path){
   return path.split('.').reduce((acc, key) => (acc && acc[key] !== undefined) ? acc[key] : undefined, window.I18N);
 }

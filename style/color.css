@@ -4,6 +4,10 @@
    these variables instead of raw color values.
    ========================================================= */
 :root{
+  /* Constants (independent of light/dark mode) */
+  --white-const: #FFFFFF;
+  --navy-const: #0F2854;
+
   /* Brand palette */
   --blue: #4988C4;
   --blue-dark: #1C4D8D;
@@ -26,6 +30,8 @@
   --shadow-soft: 0 10px 30px rgba(15,40,84,0.08);
   --shadow-lift: 0 20px 45px rgba(15,40,84,0.14);
   --shadow-menu: -20px 0 50px rgba(0,0,0,0.12);
+  --value-card-bg: rgba(255, 255, 255, 0.75);
+  --footer-bg: var(--navy);
 
   /* Text-on-tint accents (used over orange-tint / mint-tint backgrounds) */
   --amber-ink: #0F2854;
@@ -51,4 +57,49 @@
   --white-75: rgba(255,255,255,0.75);
   --white-40: rgba(255,255,255,0.4);
   --white-12: rgba(255,255,255,0.12);
+}
+
+/* =========================================================
+   DARK THEME OVERRIDES
+   ========================================================= */
+[data-theme="dark"] {
+  /* Brand palette overrides */
+  --blue: #60A5FA;
+  --blue-dark: #3B82F6;
+  --blue-tint: rgba(96, 165, 250, 0.15);
+  --mint: #34D399;
+  --mint-tint: rgba(52, 211, 153, 0.15);
+  --orange: #FB923C;
+  --orange-tint: rgba(251, 146, 60, 0.15);
+  --navy: #F8FAFC;
+  --ink: #E2E8F0;
+  --ink-soft: #94A3B8;
+  --paper: #070D19;
+  --mist: #0E1A30;
+  --white: #0F1E36;
+
+  /* Surfaces & elevation overrides */
+  --line: rgba(255, 255, 255, 0.08);
+  --glass: rgba(7, 13, 25, 0.8);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.4);
+  --shadow-lift: 0 20px 45px rgba(0, 0, 0, 0.6);
+  --value-card-bg: rgba(15, 30, 54, 0.55);
+  --footer-bg: #040810;
+
+  /* Text-on-tint accents */
+  --amber-ink: #FB923C;
+  --teal-ink: #34D399;
+
+  /* Button glows */
+  --orange-glow: rgba(251, 146, 60, 0.25);
+  --orange-glow-strong: rgba(251, 146, 60, 0.35);
+  --blue-glow: rgba(96, 165, 250, 0.25);
+  --blue-glow-strong: rgba(96, 165, 250, 0.35);
+  --mint-glow: rgba(52, 211, 153, 0.25);
+  --mint-glow-strong: rgba(52, 211, 153, 0.35);
+
+  /* Button "press" bases */
+  --orange-press: #C2410C;
+  --neutral-press: #1E2D4A;
 }

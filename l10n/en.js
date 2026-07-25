@@ -88,14 +88,14 @@ window.I18N_EN = {
     intro: "A running log of workshops, milestones, and what's coming next. New entries get added straight to the list below.",
     loadMore: "Load more updates",
     items: [
-      { date: "AUG\n2026", tag: "event", tagLabel: "Event", title: "Student-initiated creative fest organized by RFZ digital wellbeing club", desc: "" },
-      { date: "AUG\n2026", tag: "milestone", tagLabel: "Milestone", title: "500+ stakeholders reached", desc: "" },
-      { date: "JUL\n2026", tag: "partnership", tagLabel: "Partnership", title: "3 Partners joined", desc: "" },
-      { date: "JUL\n2026", tag: "event", tagLabel: "Event", title: "Vibe-coding guidebook launched", desc: "" },
-      { date: "JUL\n2026", tag: "milestone", tagLabel: "Milestone", title: "RFZ Digital welfare club launched", desc: "" },
-      { date: "JUL\n2026", tag: "milestone", tagLabel: "Milestone", title: "67+ Students maintaining a digital tracking log", desc: "" },
+      { date: "JUN\n2026", tag: "milestone", tagLabel: "Milestone", title: "Project Shomonnoy", desc: "" },
       { date: "JUN\n2026", tag: "event", tagLabel: "Event", title: "Expert-Led Workshop on Screen Dependency", desc: "" },
-      { date: "JUN\n2026", tag: "milestone", tagLabel: "Milestone", title: "Project Shomonnoy", desc: "" }
+      { date: "JUL\n2026", tag: "milestone", tagLabel: "Milestone", title: "67+ Students maintaining a digital tracking log", desc: "" },
+      { date: "JUL\n2026", tag: "milestone", tagLabel: "Milestone", title: "RFZ Digital welfare club launched", desc: "" },
+      { date: "JUL\n2026", tag: "event", tagLabel: "Event", title: "Vibe-coding guidebook launched", desc: "" },
+      { date: "JUL\n2026", tag: "partnership", tagLabel: "Partnership", title: "3 Partners joined", desc: "" },
+      { date: "AUG\n2026", tag: "milestone", tagLabel: "Milestone", title: "500+ stakeholders reached", desc: "" },
+      { date: "AUG\n2026", tag: "event", tagLabel: "Event", title: "Student-initiated creative fest organized by RFZ digital wellbeing club", desc: "" }
     ]
   },
 
