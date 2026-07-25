@@ -121,7 +121,7 @@ function renderUpdates(list, append=false){
       <div>
         <span class="update-tag tag-${u.tag}">${u.tagLabel}</span>
         <h4>${u.title}</h4>
-        <p>${u.desc}</p>
+        ${u.desc ? `<p>${u.desc}</p>` : ''}
       </div>
       <i data-lucide="arrow-right" class="update-arrow"></i>
     </article>`).join('');

@@ -88,13 +88,14 @@ window.I18N_EN = {
     intro: "A running log of workshops, milestones, and what's coming next. New entries get added straight to the list below.",
     loadMore: "Load more updates",
     items: [
-      { date:"MAR\n2026", tag:"event", tagLabel:"Event", title:"Screen-Free Saturday Challenge", desc:"120+ students logged a full day without personal devices highlights and photos coming soon." },
-      { date:"FEB\n2026", tag:"partnership", tagLabel:"Partnership", title:"New school joins the network", desc:"A third partner school signed on to run the Shomonnoy club curriculum this term." },
-      { date:"FEB\n2026", tag:"milestone", tagLabel:"Milestone", title:"500 students reached", desc:"Across three schools, Shomonnoy workshops have now reached over 500 Grade 6–7 students." },
-      { date:"JAN\n2026", tag:"event", tagLabel:"Event", title:"Guidebook launch workshop", desc:"Students received their first print copies of the Shomonnoy guidebook in a hands-on session." },
-      { date:"DEC\n2025", tag:"milestone", tagLabel:"Milestone", title:"Project Shomonnoy kicks off", desc:"The capstone officially launched with its first cohort of student ambassadors." }
-      // Add future updates here, e.g.:
-      // { date:"APR\n2026", tag:"event", tagLabel:"Event", title:"...", desc:"..." },
+      { date: "AUG\n2026", tag: "event", tagLabel: "Event", title: "Student-initiated creative fest organized by RFZ digital wellbeing club", desc: "" },
+      { date: "AUG\n2026", tag: "milestone", tagLabel: "Milestone", title: "500+ stakeholders reached", desc: "" },
+      { date: "JUL\n2026", tag: "partnership", tagLabel: "Partnership", title: "3 Partners joined", desc: "" },
+      { date: "JUL\n2026", tag: "event", tagLabel: "Event", title: "Vibe-coding guidebook launched", desc: "" },
+      { date: "JUL\n2026", tag: "milestone", tagLabel: "Milestone", title: "RFZ Digital welfare club launched", desc: "" },
+      { date: "JUL\n2026", tag: "milestone", tagLabel: "Milestone", title: "67+ Students maintaining a digital tracking log", desc: "" },
+      { date: "JUN\n2026", tag: "event", tagLabel: "Event", title: "Expert-Led Workshop on Screen Dependency", desc: "" },
+      { date: "JUN\n2026", tag: "milestone", tagLabel: "Milestone", title: "Project Shomonnoy", desc: "" }
     ]
   },
 
