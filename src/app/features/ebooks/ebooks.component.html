@@ -97,7 +97,12 @@
           <h4>{{ r.title }}</h4>
           <p>{{ r.desc }}</p>
           <div class="resource-meta"><span>{{ r.size }}</span></div>
-          <a href="#" class="resource-download" download>
+          <a
+            [href]="r.link"
+            class="resource-download"
+            [target]="r.link && r.link.startsWith('http') ? '_blank' : '_self'"
+            [attr.download]="r.link && r.link.startsWith('http') ? null : ''"
+          >
             <i data-lucide="download"></i>
             {{ translate.translations().ebooks.downloadLabel || 'Download' }}
           </a>

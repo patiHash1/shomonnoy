@@ -111,9 +111,9 @@ export const EN = {
     intro: "Free materials for students, parents, and teachers more titles are added here as they're published.",
     downloadLabel: "Download",
     items: [
-      { title: "The Shomonnoy Guidebook", desc: "A grade 6–7 companion guide for building balanced digital habits.", size: "4.2 MB · PDF", icon: "book-marked", grad: "linear-gradient(160deg, var(--blue), var(--blue-dark))" },
-      { title: "Parent's Quick Reference", desc: "Conversation starters and screen-time tips for guardians.", size: "1.1 MB · PDF", icon: "file-text", grad: "linear-gradient(160deg, var(--mint), var(--teal-ink))" },
-      { title: "Classroom Activity Pack", desc: "Ready-to-run activities for teachers introducing the program.", size: "3.5 MB · PDF", icon: "clipboard-list", grad: "linear-gradient(160deg, var(--orange), var(--orange-press))" }
+      { title: "The Shomonnoy Guidebook", desc: "A grade 6–7 companion guide for building balanced digital habits.", size: "4.2 MB · PDF", icon: "book-marked", grad: "linear-gradient(160deg, var(--blue), var(--blue-dark))", link: "https://drive.google.com/file/d/16XoH63ypDYPBV1gJhD8AhJSGrSdPzixO/view?usp=sharing" },
+      { title: "Parent's Quick Reference", desc: "Conversation starters and screen-time tips for guardians.", size: "1.1 MB · PDF", icon: "file-text", grad: "linear-gradient(160deg, var(--mint), var(--teal-ink))", link: "#" },
+      { title: "Classroom Activity Pack", desc: "Ready-to-run activities for teachers introducing the program.", size: "3.5 MB · PDF", icon: "clipboard-list", grad: "linear-gradient(160deg, var(--orange), var(--orange-press))", link: "#" }
     ]
   },
 
@@ -180,8 +180,8 @@ export const EN = {
       ebooks: "Resources",
       contact: "Contact"
     },
-    copyrightHtml: "© 2026 Project Shomonnoy · A Teach For Bangladesh Student Capstone powered by <a href=\"https://www.patihash.com/\" target=\"_blank\" rel=\"noopener noreferrer\">patiHash</a>",
-    tagline: "Built with balance, for balance.",
+    copyrightHtml: "© 2026 Project Shomonnoy · A Teach For Bangladesh Student Capstone powered by <a href=\"https://www.patihash.com/\" target=\"_blank\" rel=\"noopener noreferrer\">patiHash</a> with ❤️",
+    tagline: "Build by patiHash with ❤️",
     qrLabel: "Scan to visit patiHash.com"
   }
 };
