@@ -1,4 +1,5 @@
 import { TranslationType } from './en';
+import { EBOOK_LINKS } from './resource-links';
 
 export const BN: TranslationType = {
   meta: {
@@ -113,9 +114,9 @@ export const BN: TranslationType = {
     intro: "শিক্ষার্থী, অভিভাবক ও শিক্ষকদের জন্য বিনামূল্যে পড়ার সামগ্রী — নতুন প্রকাশনাগুলো এখানেই যুক্ত হবে।",
     downloadLabel: "ডাউনলোড করুন",
     items: [
-      { title: "সমন্বয় গাইডবুক", desc: "ডিজিটাল অভ্যাস গড়ে তোলার জন্য ষষ্ঠ-সপ্তম শ্রেণীর শিক্ষার্থীদের একটি সহায়ক গাইডবুক।", size: "৪.২ এমবি · পিডিএফ", icon: "book-marked", grad: "linear-gradient(160deg, var(--blue), var(--blue-dark))", link: "https://drive.google.com/file/d/16XoH63ypDYPBV1gJhD8AhJSGrSdPzixO/view?usp=sharing" },
-      { title: "অভিভাবকদের জন্য নির্দেশিকা", desc: "অভিভাবকদের জন্য সন্তানদের সাথে আলোচনার কিছু কৌশল ও পরামর্শ।", size: "১.১ এমবি · পিডিএফ", icon: "file-text", grad: "linear-gradient(160deg, var(--mint), var(--teal-ink))", link: "#" },
-      { title: "শ্রেণীকক্ষের অ্যাক্টিভিটি প্যাক", desc: "প্রোগ্রামটি চালু করার জন্য শিক্ষকদের জন্য প্রস্তুতকৃত কিছু গ্রুপ অ্যাক্টিভিটি।", size: "৩.৫ এমবি · পিডিএফ", icon: "clipboard-list", grad: "linear-gradient(160deg, var(--orange), var(--orange-press))", link: "#" }
+      { title: "সমন্বয় গাইডবুক", desc: "ডিজিটাল অভ্যাস গড়ে তোলার জন্য ষষ্ঠ-সপ্তম শ্রেণীর শিক্ষার্থীদের একটি সহায়ক গাইডবুক।", size: "৪.২ এমবি · পিডিএফ", icon: "book-marked", grad: "linear-gradient(160deg, var(--blue), var(--blue-dark))", link: EBOOK_LINKS.shomonnoyGuidebook },
+      { title: "অভিভাবকদের জন্য নির্দেশিকা", desc: "অভিভাবকদের জন্য সন্তানদের সাথে আলোচনার কিছু কৌশল ও পরামর্শ।", size: "১.১ এমবি · পিডিএফ", icon: "file-text", grad: "linear-gradient(160deg, var(--mint), var(--teal-ink))", link: EBOOK_LINKS.parentsQuickReference },
+      { title: "শ্রেণীকক্ষের অ্যাক্টিভিটি প্যাক", desc: "প্রোগ্রামটি চালু করার জন্য শিক্ষকদের জন্য প্রস্তুতকৃত কিছু গ্রুপ অ্যাক্টিভিটি।", size: "৩.৫ এমবি · পিডিএফ", icon: "clipboard-list", grad: "linear-gradient(160deg, var(--orange), var(--orange-press))", link: EBOOK_LINKS.classroomActivityPack }
     ]
   },
 

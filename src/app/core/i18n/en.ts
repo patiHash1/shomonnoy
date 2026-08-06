@@ -1,3 +1,5 @@
+import { EBOOK_LINKS } from './resource-links';
+
 export const EN = {
   meta: {
     title: "Project Shomonnoy Balancing Screen Time & Real Life",
@@ -111,9 +113,9 @@ export const EN = {
     intro: "Free materials for students, parents, and teachers more titles are added here as they're published.",
     downloadLabel: "Download",
     items: [
-      { title: "The Shomonnoy Guidebook", desc: "A grade 6–7 companion guide for building balanced digital habits.", size: "4.2 MB · PDF", icon: "book-marked", grad: "linear-gradient(160deg, var(--blue), var(--blue-dark))", link: "https://drive.google.com/file/d/16XoH63ypDYPBV1gJhD8AhJSGrSdPzixO/view?usp=sharing" },
-      { title: "Parent's Quick Reference", desc: "Conversation starters and screen-time tips for guardians.", size: "1.1 MB · PDF", icon: "file-text", grad: "linear-gradient(160deg, var(--mint), var(--teal-ink))", link: "#" },
-      { title: "Classroom Activity Pack", desc: "Ready-to-run activities for teachers introducing the program.", size: "3.5 MB · PDF", icon: "clipboard-list", grad: "linear-gradient(160deg, var(--orange), var(--orange-press))", link: "#" }
+      { title: "The Shomonnoy Guidebook", desc: "A grade 6–7 companion guide for building balanced digital habits.", size: "4.2 MB · PDF", icon: "book-marked", grad: "linear-gradient(160deg, var(--blue), var(--blue-dark))", link: EBOOK_LINKS.shomonnoyGuidebook },
+      { title: "Parent's Quick Reference", desc: "Conversation starters and screen-time tips for guardians.", size: "1.1 MB · PDF", icon: "file-text", grad: "linear-gradient(160deg, var(--mint), var(--teal-ink))", link: EBOOK_LINKS.parentsQuickReference },
+      { title: "Classroom Activity Pack", desc: "Ready-to-run activities for teachers introducing the program.", size: "3.5 MB · PDF", icon: "clipboard-list", grad: "linear-gradient(160deg, var(--orange), var(--orange-press))", link: EBOOK_LINKS.classroomActivityPack }
     ]
   },
 
