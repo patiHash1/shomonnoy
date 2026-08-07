@@ -7,15 +7,20 @@
     </div>
     <div class="updates-feed" id="updatesFeed">
       @for (item of visibleUpdates(); track item.title) {
-        <article class="update-card">
+        <article class="update-card" [class.has-image]="item.image">
           <div class="update-date">{{ item.date }}</div>
-          <div>
+          <div class="update-content">
             <span class="update-tag" [class]="'tag-' + item.tag">{{ item.tagLabel }}</span>
             <h4>{{ item.title }}</h4>
             @if (item.desc) {
               <p>{{ item.desc }}</p>
             }
           </div>
+          @if (item.image) {
+            <div class="update-media">
+              <img [src]="item.image" [alt]="item.title" class="update-image" />
+            </div>
+          }
           <i data-lucide="arrow-right" class="update-arrow"></i>
         </article>
       }

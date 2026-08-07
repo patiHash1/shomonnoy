@@ -129,6 +129,15 @@ export const BN = {
         avatarColor: "var(--orange)",
         name: "মুতাকাব্বিরুল ইসলাম প্রান্ত",
         role: "সহ-প্রতিষ্ঠাতা ও প্রধান নির্বাহী কর্মকর্তা, পাতিহ্যাশ ক্রিয়েটিভ"
+      },
+      {
+        quote: "প্রজেক্ট সমন্বয় একটি সহজ বিশ্বাস থেকে জন্ম নিয়েছে—প্রযুক্তি যেন শিশু-কিশোরদের নিয়ন্ত্রণ না করে, বরং তাদের ক্ষমতায়ন করে। আমাদের লক্ষ্য প্রযুক্তি ব্যবহার নিরুৎসাহিত করা নয়; বরং স্ক্রিনে কাটানো সময়কে শেখা, সৃজনশীলতা এবং ব্যক্তিগত বিকাশের সুযোগে রূপান্তর করতে সহায়তা করা। আমার বিশ্বাস, এই উদ্যোগ শিক্ষার্থী, অভিভাবক ও শিক্ষকদের এমন একটি ভবিষ্যৎ গড়ে তুলতে অনুপ্রাণিত করবে, যেখানে প্রযুক্তি মানুষের সেবায় কাজ করবে, মানুষ প্রযুক্তির নয়।",
+        lang: "bn",
+        translation: "Project Shomonnoy was born out of a simple belief — that technology should not control children and teenagers, but rather empower them. Our goal is not to discourage technology use; instead, we want to help transform screen time into opportunities for learning, creativity, and personal growth. I believe this initiative will inspire students, parents, and teachers to build a future where technology works for people, not people for technology.",
+        initials: "নাছ",
+        avatarColor: "var(--blue)",
+        name: "নিশাত আজাদ ছোঁয়া",
+        role: "প্রজেক্ট লিড, প্রজেক্ট সমন্বয়"
       }
     ]
   },

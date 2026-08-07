@@ -14,8 +14,11 @@
     <div class="gallery-grid" id="galleryGrid">
       @for (g of translate.translations().network.items || []; track g.title; let idx = $index) {
         <div class="gallery-card">
-          <div class="gallery-media" [style.background]="g.grad">
-            @if (idx === 0) {
+          <div class="gallery-media" [style.background]="g.image ? 'none' : g.grad">
+            @if (g.image) {
+              <img [src]="g.image" [alt]="g.title" class="gallery-image">
+            } @else {
+              @if (idx === 0) {
               <!-- Digital Wellbeing 101 session: presentation laptop scale -->
               <svg class="gallery-svg-laptop" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
                 <path d="M20 86 L100 86 L106 94 L14 94 Z" fill="#142338" stroke="#142338" stroke-width="2" stroke-linejoin="round" />
@@ -99,6 +102,7 @@
                 <circle class="svg-story-spark svg-story-spark2" cx="72" cy="30" r="2" fill="#F4A340" />
               </svg>
             }
+          }
           </div>
           <div class="gallery-body">
             <span class="gallery-cat">{{ g.cat }}</span>

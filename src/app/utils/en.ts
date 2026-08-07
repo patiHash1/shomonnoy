@@ -1,3 +1,20 @@
+export interface UpdateItem {
+  date: string;
+  tag: string;
+  tagLabel: string;
+  title: string;
+  desc: string;
+  image?: string;
+}
+
+export interface NetworkItem {
+  cat: string;
+  title: string;
+  icon: string;
+  grad: string;
+  image?: string;
+}
+
 export const EN = {
   meta: {
     title: "Project Shomonnoy Balancing Screen Time & Real Life",
@@ -88,7 +105,7 @@ export const EN = {
       { date: "JUL\n2026", tag: "partnership", tagLabel: "Partnership", title: "3 Partners joined", desc: "" },
       { date: "AUG\n2026", tag: "milestone", tagLabel: "Milestone", title: "500+ stakeholders reached", desc: "" },
       { date: "AUG\n2026", tag: "event", tagLabel: "Event", title: "Student-initiated creative fest organized by RFZ digital wellbeing club", desc: "" }
-    ]
+    ] as UpdateItem[]
   },
 
   network: {
@@ -102,7 +119,7 @@ export const EN = {
       { cat:"Workshop", title:"Vibe coding training", icon:"paintbrush", grad:"linear-gradient(135deg, var(--blue), var(--mint))" },
       { cat:"Campaign", title:"Student magazine", icon:"heart-handshake", grad:"linear-gradient(135deg, var(--mint), var(--blue))" },
       { cat:"Workshop", title:"Leadership - RFZ Digital Welfare Club", icon:"book-open", grad:"linear-gradient(135deg, var(--orange), var(--blue))" }
-    ]
+    ] as NetworkItem[]
   },
 
   ebooks: {
@@ -129,6 +146,15 @@ export const EN = {
         avatarColor: "var(--orange)",
         name: "Mutakabbirul Islam Pranto",
         role: "Co-Founder and Chief Executive Officer, patiHash Creative"
+      },
+      {
+        quote: "প্রজেক্ট সমন্বয় একটি সহজ বিশ্বাস থেকে জন্ম নিয়েছে—প্রযুক্তি যেন শিশু-কিশোরদের নিয়ন্ত্রণ না করে, বরং তাদের ক্ষমতায়ন করে। আমাদের লক্ষ্য প্রযুক্তি ব্যবহার নিরুৎসাহিত করা নয়; বরং স্ক্রিনে কাটানো সময়কে শেখা, সৃজনশীলতা এবং ব্যক্তিগত বিকাশের সুযোগে রূপান্তর করতে সহায়তা করা। আমার বিশ্বাস, এই উদ্যোগ শিক্ষার্থী, অভিভাবক ও শিক্ষকদের এমন একটি ভবিষ্যৎ গড়ে তুলতে অনুপ্রাণিত করবে, যেখানে প্রযুক্তি মানুষের সেবায় কাজ করবে, মানুষ প্রযুক্তির নয়।",
+        lang: "bn",
+        translation: "Project Shomonnoy was born out of a simple belief — that technology should not control children and teenagers, but rather empower them. Our goal is not to discourage technology use; instead, we want to help transform screen time into opportunities for learning, creativity, and personal growth. I believe this initiative will inspire students, parents, and teachers to build a future where technology works for people, not people for technology.",
+        initials: "NAC",
+        avatarColor: "var(--blue)",
+        name: "Nishat Azad Choya",
+        role: "Project Lead, Project Shomonnoy"
       }
     ]
   },
