@@ -155,7 +155,7 @@ export const EN = {
         translation: "Project Shomonnoy was born out of a simple belief — that technology should not control children and teenagers, but rather empower them. Our goal is not to discourage technology use; instead, we want to help transform screen time into opportunities for learning, creativity, and personal growth. I believe this initiative will inspire students, parents, and teachers to build a future where technology works for people, not people for technology.",
         initials: "NAC",
         avatarColor: "var(--blue)",
-        name: "Nishat Azad Choya",
+        name: "Nishat Azad Chua",
         role: "Project Lead, Project Shomonnoy"
       }
     ]
